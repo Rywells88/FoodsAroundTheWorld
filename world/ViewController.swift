@@ -8,18 +8,18 @@
 import UIKit
 
 class ViewController: UIViewController {
+   
 
-    @IBOutlet weak var carousel: UICollectionView!
+    
+    @IBOutlet weak var tableView: UITableView!
     
     var imgArr = [ UIImage(named: "prague"), UIImage(named: "paris"), UIImage(named: "Germany")]
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        carousel.register(MyCollectionViewCell.nib(),forCellWithReuseIdentifier: MyCollectionViewCell.identifier)
-        
-        carousel.delegate = self
-        carousel.dataSource = self
+
+    
+        tableView.dataSource = self
         
     }
     
@@ -29,16 +29,18 @@ class ViewController: UIViewController {
 
 // delegate methods of collectionview
 
-extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate{
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+extension ViewController: UITableViewDataSource{
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return imgArr.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MyCollectionViewCell.identifier, for: indexPath) as! MyCollectionViewCell
-        
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: MyTableViewCell.identifier, for: indexPath) as! MyTableViewCell
         cell.configure(with:(imgArr[indexPath.row])!)
         return cell
     }
+    
 }
 
