@@ -25,36 +25,37 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             Background(blurred: false)
+                .gesture(TapGesture()
+                            .onEnded{_ in
+                                withAnimation(.spring()){
+                                    
+                                    self.departButton.toggle()
+                                    
+                                }
+                            }
+                        )
+                
+                
             VStack(alignment: .center) {
                 Text("Cuisine's Around the World")
                     .font(.title)
                     .padding(.top, 10)
         
 
-                Text("Experience food from around the world")
+                Text("Tap Anywhere to Start")
                     .font(.subheadline)
                     .padding(.top, 5)
 
-                Button(action: {
-                    withAnimation {
-                        self.departButton.toggle()
-                    }
-                }) {
-                    Image(systemName: "chevron.up.circle")
-                            .imageScale(.large)
-                            .rotationEffect(.degrees(departButton ? 180 : 0))
-                            .scaleEffect(departButton ? 1.5 : 1)
-                            .padding()
-                }
-    
                 Spacer()
+                
                 if departButton {
-                    DailyCuisine()
-                        .transition(.slide)
-                        .frame(width: 400, height: 550, alignment: .center)
+                    DailyCuisine(meal: ModelData().meals[0])
+                        .transition(.moveAndFade)
+                        .frame(width: 400, height: 700, alignment: .center)
                         .background(Color.white).opacity(0.9)
-                        .padding(.bottom, 40)
-                        .padding(.top, 110)
+                        .padding(.bottom, 30)
+
+                   
                 }
                 
                 
@@ -65,15 +66,19 @@ struct ContentView: View {
                 .padding(.bottom, 5)
                 .padding(.top, 5)
                 .offset(x: -100, y: 400)
+            }
+            
             
             
         }
         
+        
+        
     }
-}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(ModelData())
     }
 }

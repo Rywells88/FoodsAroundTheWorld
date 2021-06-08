@@ -8,51 +8,27 @@
 import SwiftUI
 
 struct DailyCuisine: View {
-    
-    static let taskDateFormat: DateFormatter = {
-           let formatter = DateFormatter()
-           formatter.dateStyle = .long
-           return formatter
-       }()
-    
-    let dueDate = Date()
+	
+	@EnvironmentObject var modelData: ModelData
+	
+	var meal: Meal
+	
+
 
     var body: some View {
         VStack {
-			MapView()
-				.frame(height: 130, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
 			
-            Text(dueDate, formatter: Self.taskDateFormat)
-                .font(.system(size: 48, weight: .heavy, design: .serif))
-				.frame(width: 250, height: 120)
-                .lineLimit(2)
-				.foregroundColor(.black)
-				.offset(x: -110,y: -160)
+			MapDate(meal:meal)
+			
             
 
                 VStack{
 					
 					Divider()
 						.padding(10)
-					
-                    Text("Germany")
-                        .multilineTextAlignment(.leading)
-                        
-                        .frame(width: 150.0)
-                       
-                        .font(.system(size: 16, weight: .medium, design: .serif))
-						.foregroundColor(.black)
-                    
-                    Text("German Independence Day")
-                        .multilineTextAlignment(.leading)
-                        .padding([.top, .leading], 0.0)
-    
-                        .font(.system(size: 18, weight: .light, design: .serif))
-						.foregroundColor(.black)
-       
                     
         
-                    Text("The cuisine of Germany (German: deutsche Küche) is made up of many different local or regional cuisines, reflecting the country's federal history. Germany itself is part of a larger cultural region, Central Europe, sharing many traditions with neighbouring countries such as Poland and the Czech Republic.")
+					Text(meal.description)
                         .font(.system(size: 14, weight: .light, design: .serif))
 						.foregroundColor(.black)
 						.lineLimit(6)
@@ -61,24 +37,20 @@ struct DailyCuisine: View {
 
 
                 }
-				.offset(y:-140)
+			
 
 			
 			
 			
 		MealList()
-		
-			.offset(y: -150)
 			.frame(height: 290)
-
         }
-        
-
-    }
+}
 }
 
 struct DailyCuisine_Previews: PreviewProvider {
     static var previews: some View {
-        DailyCuisine()
+		DailyCuisine(meal: ModelData().meals[0])
+			.environmentObject(ModelData())
     }
 }

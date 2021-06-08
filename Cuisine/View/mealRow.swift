@@ -27,6 +27,9 @@ struct mealRow: View {
 }
 
 struct mealRow_Previews: PreviewProvider {
+    
+    static var meals = ModelData().meals
+    
     static var previews: some View {
         mealRow(meal: meals[0])
     }

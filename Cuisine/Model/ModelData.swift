@@ -6,8 +6,15 @@
 //
 
 import Foundation
+import Combine
 
-var meals: [Meal] = load("mealData.json")
+final class ModelData: ObservableObject{
+    @Published var meals: [Meal] = load("mealData.json")
+}
+class SharedViewModel:  ObservableObject {
+    @Published var currentPageIsHome = false
+}
+
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

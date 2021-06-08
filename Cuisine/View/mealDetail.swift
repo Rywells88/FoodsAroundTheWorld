@@ -8,13 +8,19 @@
 import SwiftUI
 
 struct mealDetail: View {
+    
+    var m: Meal
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text(m.recipeName)
+            Text(m.country)
+        }
     }
 }
 
 struct mealDetail_Previews: PreviewProvider {
     static var previews: some View {
-        mealDetail()
+        mealDetail(m: ModelData().meals[0])
     }
 }

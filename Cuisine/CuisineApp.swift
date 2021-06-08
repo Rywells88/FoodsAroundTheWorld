@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct CuisineApp: App {
+    @StateObject private var modelData = ModelData()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(modelData)
+                .environmentObject(SharedViewModel())
         }
     }
 }

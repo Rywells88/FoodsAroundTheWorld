@@ -11,6 +11,7 @@ import CoreLocation
 
 struct Meal: Hashable, Codable, Identifiable {
     var id: Int
+    var occasion: String
     var meal: String
     var recipeName: String
     var country: String

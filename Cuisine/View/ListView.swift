@@ -9,18 +9,16 @@ import SwiftUI
 
 struct ListView: View {
     
-    //@EnvironmentObject var modelData: ModelData
-    
-    var meals : [String] = ["Breakfast", "Lunch", "Dinner"]
+    @EnvironmentObject var modelData: ModelData
     
     var body: some View {
         NavigationView{
             List{
-                ForEach(meals, id: \.self){ meal in
+                List(modelData.meals){ meal in
                     NavigationLink(
-                        destination: mealDetail(),
+                        destination: mealDetail(m: meal),
                         label: {
-                            Text(meal)
+                            Text(meal.meal)
                         })
                     
                 }
@@ -34,5 +32,6 @@ struct ListView: View {
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
         ListView()
+            .environmentObject(ModelData())
     }
 }
