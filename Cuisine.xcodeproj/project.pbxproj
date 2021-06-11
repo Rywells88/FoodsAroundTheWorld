@@ -14,7 +14,6 @@
 		D2AC3D3D2656B6C9004B5076 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AC3D3C2656B6C9004B5076 /* Background.swift */; };
 		D2AC3D3F2656BEBD004B5076 /* DailyCuisine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AC3D3E2656BEBD004B5076 /* DailyCuisine.swift */; };
 		D2AC3D412656C1BF004B5076 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AC3D402656C1BF004B5076 /* MapView.swift */; };
-		D2AC3D4326580E6C004B5076 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AC3D4226580E6C004B5076 /* ListView.swift */; };
 		D2AC3D4526580F83004B5076 /* mealDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AC3D4426580F83004B5076 /* mealDetail.swift */; };
 		D2AC3D4726581130004B5076 /* mealRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AC3D4626581130004B5076 /* mealRow.swift */; };
 		D2AC3D4B2658129A004B5076 /* meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AC3D4A2658129A004B5076 /* meal.swift */; };
@@ -35,7 +34,6 @@
 		D2AC3D3C2656B6C9004B5076 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		D2AC3D3E2656BEBD004B5076 /* DailyCuisine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = DailyCuisine.swift; sourceTree = "<group>"; usesTabs = 1; wrapsLines = 1; };
 		D2AC3D402656C1BF004B5076 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		D2AC3D4226580E6C004B5076 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		D2AC3D4426580F83004B5076 /* mealDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mealDetail.swift; sourceTree = "<group>"; };
 		D2AC3D4626581130004B5076 /* mealRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mealRow.swift; sourceTree = "<group>"; };
 		D2AC3D4A2658129A004B5076 /* meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meal.swift; sourceTree = "<group>"; };
@@ -103,7 +101,6 @@
 				D2AC3D3C2656B6C9004B5076 /* Background.swift */,
 				D2AC3D3E2656BEBD004B5076 /* DailyCuisine.swift */,
 				D2AC3D402656C1BF004B5076 /* MapView.swift */,
-				D2AC3D4226580E6C004B5076 /* ListView.swift */,
 				D2AC3D4426580F83004B5076 /* mealDetail.swift */,
 				D2AC3D4626581130004B5076 /* mealRow.swift */,
 				D2E61FA8265EDD2000778728 /* MealList.swift */,
@@ -210,7 +207,6 @@
 				D2AC3D4526580F83004B5076 /* mealDetail.swift in Sources */,
 				D2AC3D3F2656BEBD004B5076 /* DailyCuisine.swift in Sources */,
 				D247B9FB2656B3A10004604D /* ContentView.swift in Sources */,
-				D2AC3D4326580E6C004B5076 /* ListView.swift in Sources */,
 				D2B116B2266F0C7700B1940E /* MapDate.swift in Sources */,
 				D2AC3D412656C1BF004B5076 /* MapView.swift in Sources */,
 				D247B9F92656B3A10004604D /* CuisineApp.swift in Sources */,

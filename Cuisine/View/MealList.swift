@@ -17,7 +17,7 @@ struct MealList: View {
         NavigationView {
             List(ModelData().meals){ meal in
                 NavigationLink(
-                    destination: mealDetail(m: meal),
+                    destination: mealDetail(showBreakfast: .constant(false), m: meal),
                     label: {
                         Text(meal.meal)
                     })

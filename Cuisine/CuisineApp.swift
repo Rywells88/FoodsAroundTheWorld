@@ -14,7 +14,6 @@ struct CuisineApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(modelData)
-                .environmentObject(SharedViewModel())
         }
     }
 }

@@ -23,6 +23,10 @@ struct ContentView: View {
     @State private var departButton = false
     
     var body: some View {
+        
+
+            
+        
         ZStack {
             Background(blurred: false)
                 .gesture(TapGesture()
@@ -34,6 +38,7 @@ struct ContentView: View {
                                 }
                             }
                         )
+            
                 
                 
             VStack(alignment: .center) {
@@ -54,6 +59,8 @@ struct ContentView: View {
                         .frame(width: 400, height: 700, alignment: .center)
                         .background(Color.white).opacity(0.9)
                         .padding(.bottom, 30)
+        
+                
 
                    
                 }
@@ -67,10 +74,12 @@ struct ContentView: View {
                 .padding(.top, 5)
                 .offset(x: -100, y: 400)
             }
+        
             
             
             
         }
+        
         
         
         
