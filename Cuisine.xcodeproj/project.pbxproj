@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D22E87842687808A0078AD3F /* mealDetails.json in Resources */ = {isa = PBXBuildFile; fileRef = D22E87832687808A0078AD3F /* mealDetails.json */; };
+		D22E8786268781440078AD3F /* MealDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22E8785268781440078AD3F /* MealDetail.swift */; };
 		D247B9F92656B3A10004604D /* CuisineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D247B9F82656B3A10004604D /* CuisineApp.swift */; };
 		D247B9FB2656B3A10004604D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D247B9FA2656B3A10004604D /* ContentView.swift */; };
 		D247B9FD2656B3A40004604D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D247B9FC2656B3A40004604D /* Assets.xcassets */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D22E87832687808A0078AD3F /* mealDetails.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mealDetails.json; sourceTree = "<group>"; };
+		D22E8785268781440078AD3F /* MealDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetail.swift; sourceTree = "<group>"; };
 		D247B9F52656B3A10004604D /* Cuisine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cuisine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D247B9F82656B3A10004604D /* CuisineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuisineApp.swift; sourceTree = "<group>"; };
 		D247B9FA2656B3A10004604D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -112,8 +116,9 @@
 		D2AC3D49265811CD004B5076 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D2AC3D4A2658129A004B5076 /* meal.swift */,
 				D2E61FA6265EDA1D00778728 /* ModelData.swift */,
+				D2AC3D4A2658129A004B5076 /* meal.swift */,
+				D22E8785268781440078AD3F /* MealDetail.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -122,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				D2AC3D4D2658133F004B5076 /* mealData.json */,
+				D22E87832687808A0078AD3F /* mealDetails.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -192,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2AC3D4E2658133F004B5076 /* mealData.json in Resources */,
+				D22E87842687808A0078AD3F /* mealDetails.json in Resources */,
 				D247BA002656B3A40004604D /* Preview Assets.xcassets in Resources */,
 				D247B9FD2656B3A40004604D /* Assets.xcassets in Resources */,
 			);
@@ -214,6 +221,7 @@
 				D2E61FA7265EDA1D00778728 /* ModelData.swift in Sources */,
 				D2AC3D3D2656B6C9004B5076 /* Background.swift in Sources */,
 				D2B116B5266F0CB100B1940E /* PageViewController.swift in Sources */,
+				D22E8786268781440078AD3F /* MealDetail.swift in Sources */,
 				D2AC3D4726581130004B5076 /* mealRow.swift in Sources */,
 				D2E61FA9265EDD2000778728 /* MealList.swift in Sources */,
 			);

@@ -52,6 +52,7 @@ struct DailyCuisine: View {
 							.tag("Breakfast")
 					}
 					Text("Breakfast")
+						.foregroundColor(.black)
 				}
 				VStack {
 					Button(action: {self.showLunch.toggle()}){
@@ -62,6 +63,7 @@ struct DailyCuisine: View {
 							.tag("Lunch")
 					}
 					Text("Lunch")
+						.foregroundColor(.black)
 				}
 				VStack {
 					Button(action: {self.showDinner.toggle()}){
@@ -72,6 +74,7 @@ struct DailyCuisine: View {
 							.tag("Dinner")
 					}
 					Text("Dinner")
+						.foregroundColor(.black)
 				}
 			}
 			
@@ -92,13 +95,13 @@ struct DailyCuisine: View {
 				.frame(height: 100)
 		}
 		.sheet(isPresented: $showBreakfast, content: {
-			mealDetail(showBreakfast: self.$showBreakfast, m: DailyCuisine.meals[0])
+			mealDetail(showBreakfast: self.$showBreakfast, mDetail: ModelData().details[0], m: DailyCuisine.meals[0])
 		})
 		.sheet(isPresented: $showLunch, content: {
-			mealDetail(showBreakfast: self.$showLunch, m: DailyCuisine.meals[1])
+			mealDetail(showBreakfast: self.$showLunch, mDetail: ModelData().details[1], m: DailyCuisine.meals[1])
 		})
 		.sheet(isPresented: $showDinner, content: {
-			mealDetail(showBreakfast: self.$showDinner, m: DailyCuisine.meals[2])
+			mealDetail(showBreakfast: self.$showDinner, mDetail: ModelData().details[2], m: DailyCuisine.meals[2])
 		})
 		
 		

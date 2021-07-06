@@ -29,7 +29,11 @@ struct Meal: Hashable, Codable, Identifiable {
             CLLocationCoordinate2D(
                 latitude: coordinates.latitude,
                 longitude: coordinates.longitude)
-        }
+    }
+    
+  
+
+
     
     struct Coordinates: Hashable, Codable{
         var latitude: Double
