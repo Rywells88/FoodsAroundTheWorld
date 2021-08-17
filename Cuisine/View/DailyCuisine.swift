@@ -7,17 +7,25 @@
 
 import SwiftUI
 
+enum ActiveSheet: Identifiable {
+	case breakfast, lunch, dinner
+	
+	var id: Int {
+		hashValue
+	}
+}
+
+
 struct DailyCuisine: View {
 	
-	@EnvironmentObject var modelData: ModelData
+//	@EnvironmentObject var modelData: ModelData
 	
-	@State private var showBreakfast = false
-	@State private var showLunch = false
-	@State private var showDinner = false
+	@State private var activeSheet : ActiveSheet?
 	
 	var meal: Meal
 	
-	static var meals = ModelData().meals
+	
+//	static var meals = ModelData().meals
 
 
     var body: some View {
@@ -25,6 +33,9 @@ struct DailyCuisine: View {
         VStack {
 			
 			MapDate(meal:meal)
+				.frame(width: 250, height: 150, alignment: .center)
+				.padding(.bottom, 75)
+				.padding(.top, 1)
 			
             
 
@@ -40,69 +51,69 @@ struct DailyCuisine: View {
 				.frame(height: 150)
 			
 			Spacer()
-				.frame(height: 60)
+				.frame(minHeight: 15, idealHeight: 25, maxHeight: 30)
 
 			HStack (alignment: .center, spacing: 20){
 				VStack {
-					Button(action: {self.showBreakfast.toggle()}){
-						ModelData().meals[0].image
+					Button(action: {activeSheet = .breakfast}){
+						meal.mealDetails.Breakfast.image
 							.resizable()
 							.clipShape(	Circle())
 							.frame(width: 110, height: 110, alignment: .leading)
 							.tag("Breakfast")
+							.aspectRatio(0.5, contentMode: .fill)
 					}
 					Text("Breakfast")
 						.foregroundColor(.black)
 				}
+			.padding(.trailing, 10)
+			.padding(.leading, 2)
 				VStack {
-					Button(action: {self.showLunch.toggle()}){
-						ModelData().meals[1].image
+					Button(action: {activeSheet = .lunch}){
+						meal.mealDetails.Lunch.image
 							.resizable()
 							.clipShape(	Circle())
 							.frame(width: 110, height: 110, alignment: .leading)
 							.tag("Lunch")
+							.aspectRatio(0.5, contentMode: .fill)
 					}
 					Text("Lunch")
 						.foregroundColor(.black)
 				}
+			.padding(.trailing, 10)
+			.padding(.leading, 2)
 				VStack {
-					Button(action: {self.showDinner.toggle()}){
-						ModelData().meals[2].image
+					Button(action: {activeSheet = .dinner}){
+						meal.mealDetails.Dinner.image
 							.resizable()
 							.clipShape(	Circle())
 							.frame(width: 110, height: 110, alignment: .leading)
 							.tag("Dinner")
+							.aspectRatio(1, contentMode: .fill)
 					}
 					Text("Dinner")
 						.foregroundColor(.black)
 				}
+				.padding(.trailing, 10)
+				.padding(.leading, 2)
+		
 			}
+
+
 			
-//			List(ModelData().meals){ meal in
-//				NavigationLink(
-//					destination: mealDetail(m: meal)
-//						.ignoresSafeArea(.all)
-//						.frame(width: 400, height: 900, alignment: .center),
-//					label: {
-//						Text(meal.meal)
-//					})
-//
-//			}
-//			.listStyle(InsetGroupedListStyle())
-//			.background(Color.blue)
-//			.navigationTitle("Select a Meal")
-			Spacer()
-				.frame(height: 100)
 		}
-		.sheet(isPresented: $showBreakfast, content: {
-			mealDetail(showBreakfast: self.$showBreakfast, mDetail: ModelData().details[0], m: DailyCuisine.meals[0])
-		})
-		.sheet(isPresented: $showLunch, content: {
-			mealDetail(showBreakfast: self.$showLunch, mDetail: ModelData().details[1], m: DailyCuisine.meals[1])
-		})
-		.sheet(isPresented: $showDinner, content: {
-			mealDetail(showBreakfast: self.$showDinner, mDetail: ModelData().details[2], m: DailyCuisine.meals[2])
-		})
+			.padding(.bottom, 40)
+		.sheet(item: $activeSheet){item in
+			switch item {
+			case .breakfast:
+				mealDetail(activeSheet: self.$activeSheet, m: meal.mealDetails.Breakfast)
+			case .lunch:
+				mealDetail(activeSheet: self.$activeSheet, m: meal.mealDetails.Lunch)
+			case .dinner:
+				mealDetail(activeSheet: self.$activeSheet, m: meal.mealDetails.Dinner)
+			}
+		}
+		
 		
 		
 }
@@ -112,5 +123,6 @@ struct DailyCuisine_Previews: PreviewProvider {
     static var previews: some View {
 		DailyCuisine(meal: ModelData().meals[1])
 			.environmentObject(ModelData())
+			.previewDevice(PreviewDevice(rawValue: "iPhone 12 Pro Max"))
     }
 }

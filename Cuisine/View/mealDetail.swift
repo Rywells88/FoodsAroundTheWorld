@@ -8,18 +8,17 @@
 import SwiftUI
 
 struct mealDetail: View {
-    @Binding var showBreakfast : Bool
+    @Binding var activeSheet : ActiveSheet?
     
-    @EnvironmentObject var modelData: ModelData
+//    @EnvironmentObject var modelData: ModelData
+//
+//    static var meals = ModelData().details
     
-    static var meals = ModelData().details
-    
-    var mDetail: MealDetail
-    var m : Meal
+    var m : Meal.BLD
     
     func testFunction(){
-        print(mDetail.ingredients)
-        print(type(of: mDetail.ingredients))
+        print(m.ingredients)
+        print(type(of: m.ingredients))
     }
     var body: some View {
         
@@ -34,67 +33,63 @@ struct mealDetail: View {
                     HStack(alignment: .center){
                         m.image
                             .resizable()
-                            .frame(width: 250, height: 300, alignment: .center)
-                            .ignoresSafeArea()
-                            .padding(.leading, -35)
-                        Text(m.recipeName)
-                            .font(.largeTitle)
-                            .onAppear(){
-                                self.testFunction()
-                            }
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 200, height: 150)
+                            .cornerRadius(10)
+                            .overlay(RoundedRectangle(cornerRadius: 10)
+                                        .stroke(Color.black, lineWidth: 1))
+                            .shadow(radius:10)
+
+                            
 
                         
                     }
+                    .padding(.bottom, 50)
                     
-                    
-                    Spacer()
+                
                     HStack{
-                        ZStack{
                             
-//                        Color.purple
-                        VStack{
-                            Text("Ingredients")
-                            let ing = mDetail.ingredients
-                            
+                     
+                        let ing = m.ingredients
+
                             List(ing, id: \.self){ ingredient in
                                 Label(ingredient, systemImage: "circle.fill")
 
                             }
+                            .frame(width: 200, height: 400)
 
-                        
-                            
-                            }
-                        .frame(width: 180, height: 500)
-                        .padding(.top, 10)
-                        .padding(.bottom, 60)
-                        .ignoresSafeArea()
-                        }
-                
+
+
+
+
+
                         VStack {
-                            Text("Directions")
-                            let ins = mDetail.instructions
-                            
+
+                            let ins = m.instructions
+
                             ForEach(Array(zip(ins.indices, ins)), id: \.0) { index, item in
                                 Label(item, systemImage: String(index+1)+".circle")
                                     .padding(1)
-                                
+
                             }
-                            
+
+
                         }
-                        .frame(width: 200, height: 450)
+                        .frame(width: 200, height: 400)
                         .ignoresSafeArea()
                         .background(Color.white.opacity(0.5))
-                        
+
                             
                     }
-                    Spacer()
+                    .padding(5)
                 }
             }
-                .navigationBarItems(trailing: Button("Done", action: {self.showBreakfast = false}))
-                .navigationBarTitle(m.recipeName, displayMode: .inline)
             
+            .navigationBarItems(trailing: Button("Done", action: {self.activeSheet = nil}))
+          .navigationBarTitle(m.recipeName, displayMode: .inline)
             
         }
+        
         
         
        
@@ -102,8 +97,10 @@ struct mealDetail: View {
     
 }
 
+
 struct mealDetail_Previews: PreviewProvider {
     static var previews: some View {
-        mealDetail(showBreakfast: .constant(true), mDetail: ModelData().details[0], m: ModelData().meals[0])
+        mealDetail(activeSheet: .constant(.lunch), m: ModelData().meals[0].mealDetails.Lunch)
     }
 }
+

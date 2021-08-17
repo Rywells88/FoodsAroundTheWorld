@@ -12,7 +12,7 @@ struct MapDate: View {
     var meal : Meal
     
     var body: some View {
-        MapView()
+        MapView(coordinates: meal.locationCoordinate)
             .frame(width: 400, height:220, alignment: .center)
             .overlay(TextOverlay(meal: meal))
     }

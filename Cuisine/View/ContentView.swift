@@ -23,6 +23,7 @@ struct ContentView: View {
     @State private var departButton = false
     
     var body: some View {
+    let today = TodaysOccasion()
         
 
             
@@ -32,7 +33,7 @@ struct ContentView: View {
                 .gesture(TapGesture()
                             .onEnded{_ in
                                 withAnimation(.spring()){
-                                    
+
                                     self.departButton.toggle()
                                     
                                 }
@@ -54,13 +55,14 @@ struct ContentView: View {
                     .foregroundColor(.black).opacity(0.8)
 
                 Spacer()
-                
                 if departButton {
-                    DailyCuisine(meal: ModelData().meals[0])
-                        .transition(.moveAndFade)
-                        .frame(width: 400, height: 700, alignment: .center)
+
+                    DailyCuisine(meal: today.getOccasion())
+//                        .transition(.moveAndFade)
+                        .padding(.top, 10)
                         .background(Color.white).opacity(0.9)
-                        .padding(.bottom, 30)
+                        .padding(.bottom, 50)
+
         
                 
 
