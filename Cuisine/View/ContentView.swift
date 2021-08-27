@@ -36,9 +36,11 @@ struct ContentView: View {
 
                                     self.departButton.toggle()
                                     
+                                    
                                 }
                             }
                         )
+                
             
                 
                 
@@ -57,7 +59,7 @@ struct ContentView: View {
                 Spacer()
                 if departButton {
 
-                    DailyCuisine(meal: today.getOccasion())
+                    DailyCuisine(WikiResult: "", meal: today.getOccasion())
 //                        .transition(.moveAndFade)
                         .padding(.top, 10)
                         .background(Color.white).opacity(0.9)

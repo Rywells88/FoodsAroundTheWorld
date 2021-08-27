@@ -15,6 +15,7 @@ struct Meal: Hashable, Codable, Identifiable {
     var country: String
     var description: String
 //    read value assocaited with the key by creating a new property with the same name as the key (beacuse it conforms to codable)
+    var URL : String
     
     
     var mealDetails : Details
@@ -42,6 +43,7 @@ struct Meal: Hashable, Codable, Identifiable {
         var id : Int
         var ingredients : [String]
         var instructions : [String]
+        var recipeURL : String
         
         
     }

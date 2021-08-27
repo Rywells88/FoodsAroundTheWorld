@@ -9,7 +9,6 @@
         },
         "description": "The Battle of Adwa (Amharic: ዐድዋ; Tigrinya: ዓድዋ; Italian Adua, also spelled Adowa) was the climactic battle of the First Italo-Ethiopian War. The Ethiopian forces defeated the Italian invading force on Sunday 1 March 1896, near the town of Adwa. The decisive victory thwarted the campaign of the Kingdom of Italy to expand its colonial empire in the Horn of Africa. By the end of the 19th century, European powers had carved up almost all of Africa after the Berlin Conference; only Ethiopia and Liberia still maintained their independence. Adwa became a preeminent symbol of pan-Africanism and secured Ethiopian sovereignty until the Second Italo-Ethiopian War forty years later.",
         "URL" : "https://en.wikipedia.org/wiki/Battle_of_Adwa",
-        "recipeURL" : "https://www.africanbites.com/injera/"
         
         "mealDetails" : {
             "Breakfast" : {
@@ -18,118 +17,34 @@
                 "id" : 1,
                 "ingredients" : ["2 large potatoes","1/4 cup butter","1/2 cup green onions","8 large eggs","1/4 cup 2% milk","salt and pepper"],
                 "instructions" : ["In a Dutch oven, heat oil. Brown roast on all sides. Meanwhile, combine water, beer, tomato sauce, onion, sugar, vinegar, salt, cinnamon, bay leaf, pepper and ginger. Pour over meat and bring to a boil. Reduce heat; cover and simmer until meat is tender, 2-1/2-3 hours.",
-                    "Remove meat and slice. Discard bay leaf. If desired, thicken pan juices for gravy."]
+                    "Remove meat and slice. Discard bay leaf. If desired, thicken pan juices for gravy."],
+                "recipeURL" : "https://www.africanbites.com/injera/"
+                
                 
             },
             "Lunch" : {
-                "recipeName": "German Kartoffelpuffer",
+                "recipeName": "Injera",
                 "imageName": "Kartoffelpuffer",
                 "id" : 2,
-                "ingredients" : ["2 1/2 pounds starchy potatoes, peeled and grated","1 small yellow onion","2 large eggs","1/4 cup all purpose flour","1 teaspoon salt","neutral tasting oil for frying"],
-                "instructions" : ["In a Dutch oven, heat oil. Brown roast on all sides. Meanwhile, combine water, beer, tomato sauce, onion, sugar, vinegar, salt, cinnamon, bay leaf, pepper and ginger. Pour over meat and bring to a boil. Reduce heat; cover and simmer until meat is tender, 2-1/2-3 hours.",
-                    "Remove meat and slice. Discard bay leaf. If desired, thicken pan juices for gravy."]
+                "ingredients" : ["1 cup Teff","1 1/2 cup water","1 1/4 cups water","3/4 cup beer or beef broth","1 can (8 ounces) tomato sauce","1/2 cup chopped onion","2 tablespoons sugar","1 tablespoon white vinegar", "2 teaspoons salt", "1 teaspoon ground cinnamon", "1 bay leaf" , "1/2 teaspoon pepper" ,"1/2 teaspoon ground ginger"],
+                "instructions" : ["Mix ingredients in bowl and let sit for 3-4 days.",
+                    "Strain water from the top.", "cook 1/4 batter with 1/2 cup of water added back in a pan"],
+                "recipeURL" : "https://www.africanbites.com/injera/"
                 
             },
             "Dinner" : {
-                "recipeName": "Injera",
+                "recipeName": "Doro Wat",
                 "imageName": "BavarianPotRoast",
                 "id" : 3,
                 "ingredients" : ["1 cup Teff","1 1/2 cup water","1 1/4 cups water","3/4 cup beer or beef broth","1 can (8 ounces) tomato sauce","1/2 cup chopped onion","2 tablespoons sugar","1 tablespoon white vinegar", "2 teaspoons salt", "1 teaspoon ground cinnamon", "1 bay leaf" , "1/2 teaspoon pepper" ,"1/2 teaspoon ground ginger"],
                 "instructions" : ["Mix ingredients in bowl and let sit for 3-4 days.",
-                    "Strain water from the top.", "cook 1/4 batter with 1/2 cup of water added back in a pan ]
+                    "Strain water from the top.", "cook 1/4 batter with 1/2 cup of water added back in a pan"],
+                "recipeURL" : "https://www.africanbites.com/doro-wat-ethiopian-chicken-stew/"
                 
                 
-            },
-            
-        }
-        
-    },
-   
-    {
-        "occasion" : "German Independence Day",
-        "country": "Germany",
-        "id": "Oct 3",
-        "coordinates": {
-            "longitude": 13.404954,
-            "latitude": 52.520008
-        },
-        "description": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos egestas maecenas imperdiet eget id donec nisl curae congue, massa tortor vivamus ridiculus integer porta ultrices venenatis aliquet, curabitur et posuere blandit magnis dictum auctor lacinia, eleifend dolor in ornare vulputate ipsum morbi felis. Faucibus cursus malesuada orci ultrices diam nisl taciti torquent, tempor eros suspendisse euismod condimentum dis velit mi tristique, a quis etiam dignissim dictum porttitor lobortis ad fermentum, sapien consectetur dui dolor purus elit pharetra. Interdum mattis sapien ac orci vestibulum vulputate laoreet proin hac, maecenas mollis ridiculus morbi praesent cubilia vitae ligula vel, sem semper volutpat curae mauris justo nisl luctus, non eros primis ultrices nascetur erat varius integer.",
-        
-        "mealDetails" : {
-            "Breakfast" : {
-                "recipeName": "German Potato Omelette",
-                "imageName": "PotatoOmelet",
-                "id" : 1,
-                "ingredients" : ["2 large potatoes","1/4 cup butter","1/2 cup green onions","8 large eggs","1/4 cup 2% milk","salt and pepper"],
-                "instructions" : ["In a Dutch oven, heat oil. Brown roast on all sides. Meanwhile, combine water, beer, tomato sauce, onion, sugar, vinegar, salt, cinnamon, bay leaf, pepper and ginger. Pour over meat and bring to a boil. Reduce heat; cover and simmer until meat is tender, 2-1/2-3 hours.",
-                    "Remove meat and slice. Discard bay leaf. If desired, thicken pan juices for gravy."]
-                
-            },
-            "Lunch" : {
-                "recipeName": "German Kartoffelpuffer",
-                "imageName": "Kartoffelpuffer",
-                "id" : 2,
-                "ingredients" : ["2 1/2 pounds starchy potatoes, peeled and grated","1 small yellow onion","2 large eggs","1/4 cup all purpose flour","1 teaspoon salt","neutral tasting oil for frying"],
-                "instructions" : ["In a Dutch oven, heat oil. Brown roast on all sides. Meanwhile, combine water, beer, tomato sauce, onion, sugar, vinegar, salt, cinnamon, bay leaf, pepper and ginger. Pour over meat and bring to a boil. Reduce heat; cover and simmer until meat is tender, 2-1/2-3 hours.",
-                    "Remove meat and slice. Discard bay leaf. If desired, thicken pan juices for gravy."]
-                
-            },
-            "Dinner" : {
-                "recipeName": "Bavarian Pot Roast",
-                "imageName": "BavarianPotRoast",
-                "id" : 3,
-                "ingredients" : ["2 tablespoons canola oil","1 boneless beef chuck roast (3 lbs)","1 1/4 cups water","3/4 cup beer or beef broth","1 can (8 ounces) tomato sauce","1/2 cup chopped onion","2 tablespoons sugar","1 tablespoon white vinegar", "2 teaspoons salt", "1 teaspoon ground cinnamon", "1 bay leaf" , "1/2 teaspoon pepper" ,"1/2 teaspoon ground ginger"],
-                "instructions" : ["In a Dutch oven, heat oil. Brown roast on all sides. Meanwhile, combine water, beer, tomato sauce, onion, sugar, vinegar, salt, cinnamon, bay leaf, pepper and ginger. Pour over meat and bring to a boil. Reduce heat; cover and simmer until meat is tender, 2-1/2-3 hours.",
-                    "Remove meat and slice. Discard bay leaf. If desired, thicken pan juices for gravy."]
-                
-                
-            },
-            
-        }
-        
-    },
-    {
-        
-        "occasion" : "Olsok",
-        "country": "Sweden, Norway, Finland",
-        "id": "Jul 30",
-        "coordinates": {
-            "longitude": 24.945831,
-            "latitude": 60.192059
-        },
-        "description": "Olsok ('Olaf's Wake' or 'Olaf's Vigil') is a national day of celebration on July 29 in the Nordic countries of Norway and the Faroe Islands, and also in the provinces of Härjedalen in Sweden and Savonlinna in Finland.[1]",
-        "mealDetails" : {
-            "Breakfast" : {
-                "recipeName": "German Potato Omelette",
-                "imageName": "PotatoOmelet",
-                "id" : 1,
-                "ingredients" : ["2 large potatoes","1/4 cup butter","1/2 cup green onions","8 large eggs","1/4 cup 2% milk","salt and pepper"],
-                "instructions" : ["In a Dutch oven, heat oil. Brown roast on all sides. Meanwhile, combine water, beer, tomato sauce, onion, sugar, vinegar, salt, cinnamon, bay leaf, pepper and ginger. Pour over meat and bring to a boil. Reduce heat; cover and simmer until meat is tender, 2-1/2-3 hours.",
-                    "Remove meat and slice. Discard bay leaf. If desired, thicken pan juices for gravy."]
-                
-            },
-            "Lunch" : {
-                "recipeName": "German Kartoffelpuffer",
-                "imageName": "Kartoffelpuffer",
-                "id" : 2,
-                "ingredients" : ["2 1/2 pounds starchy potatoes, peeled and grated","1 small yellow onion","2 large eggs","1/4 cup all purpose flour","1 teaspoon salt","neutral tasting oil for frying"],
-                "instructions" : ["In a Dutch oven, heat oil. Brown roast on all sides. Meanwhile, combine water, beer, tomato sauce, onion, sugar, vinegar, salt, cinnamon, bay leaf, pepper and ginger. Pour over meat and bring to a boil. Reduce heat; cover and simmer until meat is tender, 2-1/2-3 hours.",
-                    "Remove meat and slice. Discard bay leaf. If desired, thicken pan juices for gravy."]
-                
-            },
-            "Dinner" : {
-                "recipeName": "FÅRIKÅL",
-                "imageName": "BavarianPotRoast",
-                "id" : 3,
-                "ingredients" : ["3 kg (6 1/2 pounds) sliced lamb shoulder, neck, or breast on the bone","3 kg (6 1/2 pounds) cabbage, in large wedges","salt 1 tbsp black peppercorns","1 liter (quart) boiling water","1 1/2 dl (2/3 cup) flour","1 1/4 dl (1/2 cup) cold water"],
-                "instructions" : ["In a wide, heavy pot, layer the meat with the cabbage, sprinkling each layer with salt and peppercorns","Add boiling water.",
-                    "Bring to a boil and simmer until the meat is tender, about 1 1/2 hours.", "Season with salt and pepper. The stock should be quite peppery. Stir the flour into the cold water, then stir into the pot to thicken. Bring to a boil.","Serve with boiled potatoes."]
-                
-                
-            },
+            }
             
         }
         
     }
-    
 ]
