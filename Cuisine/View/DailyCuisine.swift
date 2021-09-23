@@ -23,7 +23,7 @@ enum LoadingState {
 
 struct DailyCuisine: View {
 	
-//	@EnvironmentObject var modelData: ModelData
+
 	
 	@State private var activeSheet : ActiveSheet?
 	@State private var loadingState = LoadingState.loading
@@ -38,23 +38,22 @@ struct DailyCuisine: View {
         VStack {
 			
 			MapDate(meal:meal)
-				.frame(width: 250, height: 150, alignment: .center)
-				.padding(.bottom, 75)
-				.padding(.top, 1)
+				.padding(.bottom, 10)
+				.padding(.top, 0)
 			
             
 
 			Divider()
-				.padding(10)
+				.padding(.top, 20)
+				.padding(.bottom, 5)
                     
 			if loadingState == .loaded{
 				
 				Text(WikiResult)
 					.font(.system(size: 14, weight: .light, design: .serif))
 					.foregroundColor(.black)
-					.lineLimit(6)
 					.padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
-					.frame(height: 150)
+					.frame(height: 180)
 				
 			}
 			else if loadingState == .loading {
@@ -127,9 +126,9 @@ struct DailyCuisine: View {
 
 			
 		}.onAppear(perform: {
-			fetchNearbyPlaces()
+			fetchNearbyPlaces(searchTerm: meal.country + meal.occasion)
 		})
-			.padding(.bottom, 40)
+			.padding(.bottom, 20)
 		.sheet(item: $activeSheet){item in
 			switch item {
 			case .breakfast:
@@ -162,7 +161,7 @@ struct DailyCuisine: View {
 
 	}
 	
-	func fetchNearbyPlaces() {
+	func fetchNearbyPlaces(searchTerm: String) {
 		let wikipedia = Wikipedia()
 		WikipediaNetworking.appAuthorEmailForAPI = "ryley.wells88@gmail.com"
 			
@@ -170,14 +169,28 @@ struct DailyCuisine: View {
 			
 		var result : [String] = []
 
-		let _ = Wikipedia.shared.requestOptimizedSearchResults(language: language, term: "Soft rime") { (searchResults, error) in
+		let _ = Wikipedia.shared.requestOptimizedSearchResults(language: language, term: searchTerm) { (searchResults, error) in
 
 			guard error == nil else { return }
 			guard let searchResults = searchResults else { return }
 
-			print(searchResults.items[0].displayText.components(separatedBy: "\n")[0])
+			
 			loadingState = .loaded
-			WikiResult = searchResults.items[0].displayText.components(separatedBy: "\n")[0]
+			
+		
+			
+			let tmp = searchResults.items[0].displayText.components(separatedBy: "\n")[0]
+			
+//			let charset = CharacterSet(charactersIn: ".?")
+//			let tmp1 = tmp.components(separatedBy: charset)
+//
+//			var result = ""
+//
+//			for element in tmp1{
+//				result = result + element
+//			}
+			
+			WikiResult = tmp
 	}
 }
 

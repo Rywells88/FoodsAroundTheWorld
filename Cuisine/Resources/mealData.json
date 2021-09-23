@@ -1,50 +1,153 @@
-[
+[{
+        "occasion": "Independence Day",
+        "country": "Bosnia and Herzegovina",
+        "id": "Mar 1",
+        "coordinates": {
+            "longitude": 18.413,
+            "latitude": 43.856430
+        },
+        "URL": "https://en.wikipedia.org/wiki/Independence_Day_(Bosnia_and_Herzegovina)",
+
+        "mealDetails": {
+            "Breakfast": {
+                "recipeName": "Burek",
+                "imageName": "PotatoOmelet",
+                "id": 1,
+                "recipeURL": "https://ethnicspoon.com/burek/"
+
+            },
+            "Lunch": {
+                "recipeName": "Dolmas",
+                "imageName": "Kartoffelpuffer",
+                "id": 2,
+                "recipeURL": "https://ethnicspoon.com/dolmas/"
+
+
+            },
+            "Dinner": {
+                "recipeName": "Bosnian Pot Beef Stew",
+                "imageName": "BavarianPotRoast",
+                "id": 3,
+                "recipeURL": "https://allyskitchen.com/bosnian-pot/"
+
+
+            }
+
+        }
+
+    },
     {
-        "occasion" : "Adwa Victory Day",
+        "occasion": "Adwa Victory Day",
         "country": "Eithiopia",
         "id": "Mar 2",
         "coordinates": {
-            "longitude": 48.9996,
-            "latitude": 19.4436
+            "longitude": 38.763611,
+            "latitude": 9.005401
         },
-        "description": "The Battle of Adwa (Amharic: ዐድዋ; Tigrinya: ዓድዋ; Italian Adua, also spelled Adowa) was the climactic battle of the First Italo-Ethiopian War. The Ethiopian forces defeated the Italian invading force on Sunday 1 March 1896, near the town of Adwa. The decisive victory thwarted the campaign of the Kingdom of Italy to expand its colonial empire in the Horn of Africa. By the end of the 19th century, European powers had carved up almost all of Africa after the Berlin Conference; only Ethiopia and Liberia still maintained their independence. Adwa became a preeminent symbol of pan-Africanism and secured Ethiopian sovereignty until the Second Italo-Ethiopian War forty years later.",
-        "URL" : "https://en.wikipedia.org/wiki/Battle_of_Adwa",
-        
-        "mealDetails" : {
-            "Breakfast" : {
-                "recipeName": "German Potato Omelette",
+        "URL": "https://en.wikipedia.org/wiki/Battle_of_Adwa",
+
+        "mealDetails": {
+            "Breakfast": {
+                "recipeName": "Doro Wat",
                 "imageName": "PotatoOmelet",
-                "id" : 1,
-                "ingredients" : ["2 large potatoes","1/4 cup butter","1/2 cup green onions","8 large eggs","1/4 cup 2% milk","salt and pepper"],
-                "instructions" : ["In a Dutch oven, heat oil. Brown roast on all sides. Meanwhile, combine water, beer, tomato sauce, onion, sugar, vinegar, salt, cinnamon, bay leaf, pepper and ginger. Pour over meat and bring to a boil. Reduce heat; cover and simmer until meat is tender, 2-1/2-3 hours.",
-                    "Remove meat and slice. Discard bay leaf. If desired, thicken pan juices for gravy."],
-                "recipeURL" : "https://www.africanbites.com/injera/"
-                
-                
+                "id": 1,
+                "recipeURL": "https://www.africanbites.com/injera/"
+
             },
-            "Lunch" : {
-                "recipeName": "Injera",
+            "Lunch": {
+                "recipeName": "Doro Wat",
                 "imageName": "Kartoffelpuffer",
-                "id" : 2,
-                "ingredients" : ["1 cup Teff","1 1/2 cup water","1 1/4 cups water","3/4 cup beer or beef broth","1 can (8 ounces) tomato sauce","1/2 cup chopped onion","2 tablespoons sugar","1 tablespoon white vinegar", "2 teaspoons salt", "1 teaspoon ground cinnamon", "1 bay leaf" , "1/2 teaspoon pepper" ,"1/2 teaspoon ground ginger"],
-                "instructions" : ["Mix ingredients in bowl and let sit for 3-4 days.",
-                    "Strain water from the top.", "cook 1/4 batter with 1/2 cup of water added back in a pan"],
-                "recipeURL" : "https://www.africanbites.com/injera/"
-                
+                "id": 2,
+                "recipeURL": "https://www.africanbites.com/injera/"
+
+
             },
-            "Dinner" : {
+            "Dinner": {
                 "recipeName": "Doro Wat",
                 "imageName": "BavarianPotRoast",
-                "id" : 3,
-                "ingredients" : ["1 cup Teff","1 1/2 cup water","1 1/4 cups water","3/4 cup beer or beef broth","1 can (8 ounces) tomato sauce","1/2 cup chopped onion","2 tablespoons sugar","1 tablespoon white vinegar", "2 teaspoons salt", "1 teaspoon ground cinnamon", "1 bay leaf" , "1/2 teaspoon pepper" ,"1/2 teaspoon ground ginger"],
-                "instructions" : ["Mix ingredients in bowl and let sit for 3-4 days.",
-                    "Strain water from the top.", "cook 1/4 batter with 1/2 cup of water added back in a pan"],
-                "recipeURL" : "https://www.africanbites.com/doro-wat-ethiopian-chicken-stew/"
-                
-                
+                "id": 3,
+                "recipeURL": "https://www.africanbites.com/doro-wat-ethiopian-chicken-stew/"
+
+
             }
-            
+
         }
-        
+
+    },
+    {
+        "occasion": "Liberation Day (Bulgaria)",
+        "country": "Bulgaria",
+        "id": "Mar 3",
+        "coordinates": {
+            "longitude": 23.319941,
+            "latitude": 42.698334
+        },
+        "URL": "https://en.wikipedia.org/wiki/Liberation_Day_(Bulgaria)",
+
+        "mealDetails": {
+            "Breakfast": {
+                "recipeName": "Mekitsi",
+                "imageName": "PotatoOmelet",
+                "id": 1,
+                "recipeURL": "https://bulgariancooking.com/bulgarian-fried-dough-mekitsi-recipe/"
+
+            },
+            "Lunch": {
+                "recipeName": "Shopska Salata",
+                "imageName": "Kartoffelpuffer",
+                "id": 2,
+                "recipeURL": "https://diethood.com/shopska-salad-macedonian-chopped-salad/"
+
+
+            },
+            "Dinner": {
+                "recipeName": "Kebapche",
+                "imageName": "BavarianPotRoast",
+                "id": 3,
+                "recipeURL": "https://www.findbgfood.com/recipe-kebapche"
+
+
+            }
+
+        }
+
+    },
+    {
+        "occasion": "Kaziuko mugė",
+        "country": "Lithuania",
+        "id": "Mar 4",
+        "coordinates": {
+            "longitude": 25.200268,
+            "latitude": 54.740089
+        },
+        "URL": "https://en.wikipedia.org/wiki/Kaziuko_mug%C4%97",
+
+        "mealDetails": {
+            "Breakfast": {
+                "recipeName": "Mekitsi",
+                "imageName": "PotatoOmelet",
+                "id": 1,
+                "recipeURL": "https://bulgariancooking.com/bulgarian-fried-dough-mekitsi-recipe/"
+
+            },
+            "Lunch": {
+                "recipeName": "Šaltibarščiai (Cold beet soup)",
+                "imageName": "Kartoffelpuffer",
+                "id": 2,
+                "recipeURL": "https://diethood.com/shopska-salad-macedonian-chopped-salad/"
+
+
+            },
+            "Dinner": {
+                "recipeName": "Cepelinai",
+                "imageName": "BavarianPotRoast",
+                "id": 3,
+                "recipeURL": "https://www.thespruceeats.com/lithuanian-potato-meat-dumplings-recipe-cepelinai-1136766"
+
+
+            }
+
+        }
+
     }
 ]

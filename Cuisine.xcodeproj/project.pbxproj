@@ -16,15 +16,15 @@
 		D2AC3D3F2656BEBD004B5076 /* DailyCuisine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AC3D3E2656BEBD004B5076 /* DailyCuisine.swift */; };
 		D2AC3D412656C1BF004B5076 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AC3D402656C1BF004B5076 /* MapView.swift */; };
 		D2AC3D4526580F83004B5076 /* mealDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AC3D4426580F83004B5076 /* mealDetail.swift */; };
-		D2AC3D4726581130004B5076 /* mealRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AC3D4626581130004B5076 /* mealRow.swift */; };
 		D2AC3D4B2658129A004B5076 /* meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AC3D4A2658129A004B5076 /* meal.swift */; };
 		D2AC3D4E2658133F004B5076 /* mealData.json in Resources */ = {isa = PBXBuildFile; fileRef = D2AC3D4D2658133F004B5076 /* mealData.json */; };
 		D2B116B2266F0C7700B1940E /* MapDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B116B1266F0C7700B1940E /* MapDate.swift */; };
 		D2B116B5266F0CB100B1940E /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B116B4266F0CB100B1940E /* PageViewController.swift */; };
-		D2B8DFCC26D87313000666ED /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B8DFCB26D87313000666ED /* Result.swift */; };
 		D2CAE0DF26CC2CF900B18445 /* WikipediaKit in Frameworks */ = {isa = PBXBuildFile; productRef = D2CAE0DE26CC2CF900B18445 /* WikipediaKit */; };
 		D2E61FA7265EDA1D00778728 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E61FA6265EDA1D00778728 /* ModelData.swift */; };
 		D2E61FA9265EDD2000778728 /* MealList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E61FA8265EDD2000778728 /* MealList.swift */; };
+		D2F3530426FBA278002390C4 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F3530326FBA278002390C4 /* Cloud.swift */; };
+		D2F3530626FBAA50002390C4 /* AirplaneWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F3530526FBAA50002390C4 /* AirplaneWindow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,14 +39,14 @@
 		D2AC3D3E2656BEBD004B5076 /* DailyCuisine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = DailyCuisine.swift; sourceTree = "<group>"; usesTabs = 1; wrapsLines = 1; };
 		D2AC3D402656C1BF004B5076 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		D2AC3D4426580F83004B5076 /* mealDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mealDetail.swift; sourceTree = "<group>"; };
-		D2AC3D4626581130004B5076 /* mealRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mealRow.swift; sourceTree = "<group>"; };
 		D2AC3D4A2658129A004B5076 /* meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = meal.swift; sourceTree = "<group>"; };
 		D2AC3D4D2658133F004B5076 /* mealData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mealData.json; sourceTree = "<group>"; };
 		D2B116B1266F0C7700B1940E /* MapDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDate.swift; sourceTree = "<group>"; };
 		D2B116B4266F0CB100B1940E /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
-		D2B8DFCB26D87313000666ED /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		D2E61FA6265EDA1D00778728 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		D2E61FA8265EDD2000778728 /* MealList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealList.swift; sourceTree = "<group>"; };
+		D2F3530326FBA278002390C4 /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
+		D2F3530526FBAA50002390C4 /* AirplaneWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirplaneWindow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,9 +108,10 @@
 				D2AC3D3E2656BEBD004B5076 /* DailyCuisine.swift */,
 				D2AC3D402656C1BF004B5076 /* MapView.swift */,
 				D2AC3D4426580F83004B5076 /* mealDetail.swift */,
-				D2AC3D4626581130004B5076 /* mealRow.swift */,
 				D2E61FA8265EDD2000778728 /* MealList.swift */,
 				D2B116B1266F0C7700B1940E /* MapDate.swift */,
+				D2F3530326FBA278002390C4 /* Cloud.swift */,
+				D2F3530526FBAA50002390C4 /* AirplaneWindow.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -121,7 +122,6 @@
 				D2E61FA6265EDA1D00778728 /* ModelData.swift */,
 				D2AC3D4A2658129A004B5076 /* meal.swift */,
 				D233AA2C26B1ED9900B114F1 /* TodaySelector.swift */,
-				D2B8DFCB26D87313000666ED /* Result.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -218,9 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2B8DFCC26D87313000666ED /* Result.swift in Sources */,
 				D2AC3D4526580F83004B5076 /* mealDetail.swift in Sources */,
+				D2F3530426FBA278002390C4 /* Cloud.swift in Sources */,
 				D2AC3D3F2656BEBD004B5076 /* DailyCuisine.swift in Sources */,
+				D2F3530626FBAA50002390C4 /* AirplaneWindow.swift in Sources */,
 				D233AA2D26B1ED9900B114F1 /* TodaySelector.swift in Sources */,
 				D247B9FB2656B3A10004604D /* ContentView.swift in Sources */,
 				D2B116B2266F0C7700B1940E /* MapDate.swift in Sources */,
@@ -230,7 +231,6 @@
 				D2E61FA7265EDA1D00778728 /* ModelData.swift in Sources */,
 				D2AC3D3D2656B6C9004B5076 /* Background.swift in Sources */,
 				D2B116B5266F0CB100B1940E /* PageViewController.swift in Sources */,
-				D2AC3D4726581130004B5076 /* mealRow.swift in Sources */,
 				D2E61FA9265EDD2000778728 /* MealList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

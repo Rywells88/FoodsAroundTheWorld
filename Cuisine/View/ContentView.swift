@@ -48,20 +48,20 @@ struct ContentView: View {
                 Text("Cuisine's Around the World")
                     .font(.title)
                     .padding(.top, 10)
-                    .foregroundColor(.black).opacity(0.8)
+                    .foregroundColor(.white).opacity(0.8)
         
 
                 Text("Tap Anywhere to Start")
                     .font(.subheadline)
                     .padding(.top, 5)
-                    .foregroundColor(.black).opacity(0.8)
+                    .foregroundColor(.white).opacity(0.8)
 
                 Spacer()
                 if departButton {
 
                     DailyCuisine(WikiResult: "", meal: today.getOccasion())
 //                        .transition(.moveAndFade)
-                        .padding(.top, 10)
+                        .padding(.top, 5)
                         .background(Color.white).opacity(0.9)
                         .padding(.bottom, 50)
 
@@ -74,12 +74,7 @@ struct ContentView: View {
                 
                    
             }
-            Text("Prague, Czech Republic")
-                .font(.subheadline)
-                .padding(.bottom, 5)
-                .padding(.top, 5)
-                .offset(x: -100, y: 400)
-                .foregroundColor(.black).opacity(0.8)
+
             }
         
             
