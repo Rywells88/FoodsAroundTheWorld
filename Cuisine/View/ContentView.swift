@@ -47,7 +47,7 @@ struct ContentView: View {
             VStack(alignment: .center) {
                 Text("Cuisine's Around the World")
                     .font(.title)
-                    .padding(.top, 10)
+                    .padding(.top, 80)
                     .foregroundColor(.white).opacity(0.8)
         
 
