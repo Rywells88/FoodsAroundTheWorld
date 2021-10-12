@@ -1,4 +1,42 @@
 [{
+    "occasion": "Day of the Establishment of the Slovak Republic",
+    "country": "Slovakia",
+    "id": "Mar 1",
+    "coordinates": {
+        "longitude": 17.107748,
+        "latitude": 48.148598
+    },
+    "URL": "https://en.wikipedia.org/wiki/Slovakia",
+
+    "mealDetails": {
+        "Breakfast": {
+            "recipeName": "PALACINKY (SLOVAK CREPES SUZETTES)",
+            "imageName": "PotatoOmelet",
+            "id": 1,
+            "recipeURL": "https://www.food.com/recipe/palacinky-slovak-crepes-suzettes-154537"
+
+        },
+        "Lunch": {
+            "recipeName": "Bryndzové Halušky (Slovakian Potato Dumplings with Bryndza Cheese)",
+            "imageName": "Kartoffelpuffer",
+            "id": 2,
+            "recipeURL": "https://cookpad.com/us/recipes/57890-bryndzove-halusky-slovakian-potato-dumplings-with-bryndza-cheese"
+
+
+        },
+        "Dinner": {
+            "recipeName": "Bryndza Pierogi (Bryndzové Pirohy)",
+            "imageName": "BavarianPotRoast",
+            "id": 3,
+            "recipeURL": "http://www.slovakcooking.com/2010/recipes/pierogi/"
+
+
+        }
+
+    }
+
+    },
+    {
         "occasion": "Independence Day",
         "country": "Bosnia and Herzegovina",
         "id": "Mar 1",
@@ -149,5 +187,310 @@
 
         }
 
+    },
+    {
+        "occasion": "St Piran's Day",
+        "country": "England",
+        "id": "Mar 5",
+        "coordinates": {
+            "longitude": -5.051000,
+            "latitude": 50.259998
+        },
+        "URL": "https://en.wikipedia.org/wiki/St_Piran%27s_Day",
+
+        "mealDetails": {
+            "Breakfast": {
+                "recipeName": "Cornish Cream Tea",
+                "imageName": "PotatoOmelet",
+                "id": 1,
+                "recipeURL": "https://www.travelaboutbritain.com/recipes/cornish_cream_tea.php"
+
+            },
+            "Lunch": {
+                "recipeName": "Cornish Crab Sandwich",
+                "imageName": "Kartoffelpuffer",
+                "id": 2,
+                "recipeURL": "https://crabmeat.co.uk/best-ever-cornish-crab-sandwich/"
+
+
+            },
+            "Dinner": {
+                "recipeName": "Seafood Stew",
+                "imageName": "BavarianPotRoast",
+                "id": 3,
+                "recipeURL": "https://realfood.tesco.com/recipes/seafood-stew-recipe.html"
+
+
+            }
+
+        }
+
+    },
+    {
+        "occasion": "Independence Day (Ghana)",
+        "country": "Ghana",
+        "id": "Mar 6",
+        "coordinates": {
+            "longitude": -0.205874,
+            "latitude": 5.614818
+        },
+        "URL": "https://en.wikipedia.org/wiki/Independence_Day_(Ghana)",
+
+        "mealDetails": {
+            "Breakfast": {
+                "recipeName": "Jamaican Hominy Corn Porridge",
+                "imageName": "PotatoOmelet",
+                "id": 1,
+                "recipeURL": "https://jamaicans.com/hominyporridge/"
+
+            },
+            "Lunch": {
+                "recipeName": "Ghanaian Chicken and Peanut Stew",
+                "imageName": "Kartoffelpuffer",
+                "id": 2,
+                "recipeURL": "https://www.seriouseats.com/ghana-west-african-peanut-stew-chicken-groundnut-soup"
+
+
+            },
+            "Dinner": {
+                "recipeName": "Fufu and Light Soup",
+                "imageName": "BavarianPotRoast",
+                "id": 3,
+                "recipeURL": "https://www.pinterest.ca/pin/580823683162688609/"
+
+
+            }
+
+        }
+
+    },
+    {
+        "occasion": "Independence Day (Ghana)",
+        "country": "Ghana",
+        "id": "Mar 7",
+        "coordinates": {
+            "longitude": -0.205874,
+            "latitude": 5.614818
+        },
+        "URL": "https://en.wikipedia.org/wiki/Independence_Day_(Ghana)",
+
+        "mealDetails": {
+            "Breakfast": {
+                "recipeName": "Jamaican Hominy Corn Porridge",
+                "imageName": "PotatoOmelet",
+                "id": 1,
+                "recipeURL": "https://jamaicans.com/hominyporridge/"
+
+            },
+            "Lunch": {
+                "recipeName": "Ghanaian Chicken and Peanut Stew",
+                "imageName": "Kartoffelpuffer",
+                "id": 2,
+                "recipeURL": "https://www.seriouseats.com/ghana-west-african-peanut-stew-chicken-groundnut-soup"
+
+
+            },
+            "Dinner": {
+                "recipeName": "Fufu and Light Soup",
+                "imageName": "BavarianPotRoast",
+                "id": 3,
+                "recipeURL": "https://www.pinterest.ca/pin/580823683162688609/"
+
+
+            }
+
+        }
+
+    },
+    {
+        "occasion": "National Day (Mauritius)",
+        "country": "Mauritius",
+        "id": "Mar 12",
+        "coordinates": {
+            "longitude": 57.561768,
+            "latitude": -20.244959
+        },
+        "URL": "https://en.wikipedia.org/wiki/Mauritius",
+
+        "mealDetails": {
+            "Breakfast": {
+                "recipeName": "Jamaican Hominy Corn Porridge",
+                "imageName": "PotatoOmelet",
+                "id": 1,
+                "recipeURL": "https://jamaicans.com/hominyporridge/"
+
+            },
+            "Lunch": {
+                "recipeName": "Ghanaian Chicken and Peanut Stew",
+                "imageName": "Kartoffelpuffer",
+                "id": 2,
+                "recipeURL": "https://www.seriouseats.com/ghana-west-african-peanut-stew-chicken-groundnut-soup"
+
+
+            },
+            "Dinner": {
+                "recipeName": "Fufu and Light Soup",
+                "imageName": "BavarianPotRoast",
+                "id": 3,
+                "recipeURL": "https://www.pinterest.ca/pin/580823683162688609/"
+
+
+            }
+
+        }
+
+    },
+    {
+        "occasion": "Fête nationale",
+        "country": "France",
+        "id":  "Jul 14",
+        "coordinates": {
+            "longitude": 2.349014,
+            "latitude": 48.864716
+        },
+        "URL": "https://en.wikipedia.org/wiki/Bastille_Day",
+
+        "mealDetails": {
+            "Breakfast": {
+                "recipeName": "French Crepes",
+                "imageName": "PotatoOmelet",
+                "id": 1,
+                "recipeURL": "https://www.allrecipes.com/recipe/20931/french-crepes/"
+
+            },
+            "Lunch": {
+                "recipeName": "French Onion Soup",
+                "imageName": "Kartoffelpuffer",
+                "id": 2,
+                "recipeURL": "https://www.tasteofhome.com/recipes/classic-french-onion-soup/"
+
+
+            },
+            "Dinner": {
+                "recipeName": "Slow Cooker Coq Au Vin",
+                "imageName": "BavarianPotRoast",
+                "id": 3,
+                "recipeURL": "https://www.delish.com/cooking/recipes/a46138/slow-cooker-coq-au-vin-recipe/"
+
+
+            }
+
+        }
+
+    },
+    {
+        "occasion": "Swiss National Day",
+        "country": "Switzerland",
+        "id": "Aug 1",
+        "coordinates": {
+            "longitude": 6.143158,
+            "latitude": 46.204391
+        },
+        "URL": "https://en.wikipedia.org/wiki/Swiss_National_Day",
+
+        "mealDetails": {
+            "Breakfast": {
+                "recipeName": "Ham & Swiss French Toast",
+                "imageName": "PotatoOmelet",
+                "id": 1,
+                "recipeURL": "https://www.yummly.com/recipe/Ham-_-Swiss-French-Toast-2531681"
+
+            },
+            "Lunch": {
+                "recipeName": "Potato Rosti",
+                "imageName": "Kartoffelpuffer",
+                "id": 2,
+                "recipeURL": "https://www.recipetineats.com/potato-rosti/"
+
+
+            },
+            "Dinner": {
+                "recipeName": "Swiss Fondue",
+                "imageName": "BavarianPotRoast",
+                "id": 3,
+                "recipeURL": "https://www.foodandwine.com/recipes/classic-swiss-cheese-fondue"
+
+
+            }
+
+        }
+
+    },
+    {
+        "occasion": "Oktoberfest",
+        "country": "Germany",
+        "id": "Sep 17",
+        "coordinates": {
+            "longitude": 11.576124,
+            "latitude": 48.137154
+        },
+        "URL": "https://en.wikipedia.org/wiki/Oktoberfest",
+
+        "mealDetails": {
+            "Breakfast": {
+                "recipeName": "Obatzda (spiced cheese-butter spread)",
+                "imageName": "PotatoOmelet",
+                "id": 1,
+                "recipeURL": "https://www.foodandwine.com/recipes/paprika-cheese-spread"
+
+            },
+            "Lunch": {
+                "recipeName": "Würstl (sausages)",
+                "imageName": "Kartoffelpuffer",
+                "id": 2,
+                "recipeURL": "https://www.foodandwine.com/recipes/sauteed-german-sausages-bacon-and-apple-sauerkraut"
+
+
+            },
+            "Dinner": {
+                "recipeName": "Schweinebraten (roast pork)",
+                "imageName": "BavarianPotRoast",
+                "id": 3,
+                "recipeURL": "https://www.foodandwine.com/recipes/pork-tenderloin-smothered-in-onion-and-mustard"
+
+
+            }
+
+        }
+
+    },
+    {
+        "occasion": "Independence Day Czech Republic",
+        "country": "Czech Republic",
+        "id":  "Oct 28",
+        "coordinates": {
+            "longitude": 14.418540,
+            "latitude": 50.073658
+        },
+        "URL": "https://en.wikipedia.org/wiki/Czech_Republic",
+
+        "mealDetails": {
+            "Breakfast": {
+                "recipeName": "Bramboráky",
+                "imageName": "PotatoOmelet",
+                "id": 1,
+                "recipeURL": "https://www.allrecipes.com/recipe/212824/bramboracky-czech-savory-potato-pancakes/"
+
+            },
+            "Lunch": {
+                "recipeName": "Baked Rice Pudding – CZECH RÝŽOVÝ",
+                "imageName": "Kartoffelpuffer",
+                "id": 2,
+                "recipeURL": "https://www.cooklikeczechs.com/czech-ryzovy-nakyp-se-svestkami-rice-pudding-with-plums/"
+
+
+            },
+            "Dinner": {
+                "recipeName": "Czech Roast Duck",
+                "imageName": "BavarianPotRoast",
+                "id": 3,
+                "recipeURL": "https://www.thespruceeats.com/czech-roast-duck-recipe-1136394"
+
+
+            }
+
+        }
+
     }
+    
 ]

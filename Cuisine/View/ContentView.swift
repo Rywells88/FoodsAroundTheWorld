@@ -47,14 +47,21 @@ struct ContentView: View {
             VStack(alignment: .center) {
                 Text("Cuisine's Around the World")
                     .font(.title)
-                    .padding(.top, 80)
-                    .foregroundColor(.white).opacity(0.8)
+                    .padding(.top, 5)
+                    .foregroundColor(.black).opacity(0.8)
+                    .shadow(radius: 1)
         
 
                 Text("Tap Anywhere to Start")
                     .font(.subheadline)
-                    .padding(.top, 5)
-                    .foregroundColor(.white).opacity(0.8)
+                    .padding(.top, 80)
+                    .foregroundColor(.black).opacity(0.8)
+                    .shadow(radius: 1)
+                    .onAppear{
+                        
+                    }
+
+                    
 
                 Spacer()
                 if departButton {

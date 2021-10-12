@@ -25,11 +25,12 @@ struct TextOverlay: View {
            formatter.dateStyle = .long
            return formatter
        }()
-
-    let dueDate = Date()
+    
     
     var meal: Meal
-
+    
+    
+    
     var gradient: LinearGradient {
         LinearGradient(
             gradient: Gradient(
@@ -37,7 +38,9 @@ struct TextOverlay: View {
             startPoint: .bottom,
             endPoint: .center)
     }
-
+    
+    
+    
     var body: some View {
         ZStack(alignment: .bottomLeading) {
             Rectangle().fill(gradient)
@@ -46,7 +49,8 @@ struct TextOverlay: View {
                     .font(.title)
                     .bold()
                 Text(meal.country)
-                Text(dueDate, formatter: Self.taskDateFormat)
+//                formatter.date(from: meal.id
+                Text(meal.id, formatter: Self.taskDateFormat)
             }
             .padding()
         }

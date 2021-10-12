@@ -126,20 +126,17 @@ struct DailyCuisine: View {
 
 			
 		}.onAppear(perform: {
-			fetchNearbyPlaces(searchTerm: meal.country + meal.occasion)
+			fetchNearbyPlaces(searchTerm: meal.country)
 		})
 			.padding(.bottom, 20)
 		.sheet(item: $activeSheet){item in
 			switch item {
 			case .breakfast:
-//				mealDetail(activeSheet: self.$activeSheet, m: meal.mealDetails.Breakfast)
+
 				SafariView(url:URL(string: self.meal.mealDetails.Breakfast.recipeURL)!)
-			
 			case .lunch:
-//				mealDetail(activeSheet: self.$activeSheet, m: meal.mealDetails.Lunch)
 				SafariView(url:URL(string: self.meal.mealDetails.Lunch.recipeURL)!)
 			case .dinner:
-//				mealDetail(activeSheet: self.$activeSheet, m: meal.mealDetails.Dinner)
 				SafariView(url:URL(string: self.meal.mealDetails.Dinner.recipeURL)!)
 			}
 		}
@@ -181,16 +178,20 @@ struct DailyCuisine: View {
 			
 			let tmp = searchResults.items[0].displayText.components(separatedBy: "\n")[0]
 			
-//			let charset = CharacterSet(charactersIn: ".?")
-//			let tmp1 = tmp.components(separatedBy: charset)
-//
-//			var result = ""
-//
-//			for element in tmp1{
-//				result = result + element
-//			}
+			let result = tmp.components(separatedBy: ".")
 			
-			WikiResult = tmp
+			var Sentence = ""
+			
+
+			if result.count >= 3{
+				WikiResult = result[0] + ". " + result[1] + ". " + result[2] + "."
+			}else if result.count  == 2{
+				WikiResult = result[0] + ". " + result[1] + ". "
+			}else{
+				WikiResult = result[0] + "."
+			}
+			
+		
 	}
 }
 
@@ -199,9 +200,15 @@ struct DailyCuisine: View {
 
 struct DailyCuisine_Previews: PreviewProvider {
     static var previews: some View {
-		DailyCuisine(WikiResult: "", meal: ModelData().meals[0])
-			.environmentObject(ModelData())
-			.previewDevice(PreviewDevice(rawValue: "iPhone 12 Pro Max"))
+		Group {
+			DailyCuisine(WikiResult: "", meal: ModelData().meals[0])
+				.environmentObject(ModelData())
+				.previewDevice(PreviewDevice(rawValue: "iPhone 12 Pro Max"))
+			DailyCuisine(WikiResult: "", meal: ModelData().meals[0])
+				.previewDevice("iPhone 12 Pro Max")
+				.environmentObject(ModelData())
+				.previewDevice(PreviewDevice(rawValue: "iPhone 12 Pro Max"))
+		}
     }
 }
 }
