@@ -21,6 +21,7 @@ extension AnyTransition {
 struct ContentView: View {
     
     @State private var departButton = false
+    @State private var infoButton = false
     
     var body: some View {
     let today = TodaysOccasion()
@@ -54,7 +55,7 @@ struct ContentView: View {
 
                 Text("Tap Anywhere to Start")
                     .font(.subheadline)
-                    .padding(.top, 80)
+                    .padding(.top, 70)
                     .foregroundColor(.black).opacity(0.8)
                     .shadow(radius: 1)
                     .onAppear{
@@ -66,7 +67,7 @@ struct ContentView: View {
                 Spacer()
                 if departButton {
 
-                    DailyCuisine(WikiResult: "", meal: today.getOccasion())
+                    DailyCuisine(WikiResult: "",WikiURL: URL(string: "https://github.com/Raureif/WikipediaKit")!, meal: today.getOccasion())
 //                        .transition(.moveAndFade)
                         .padding(.top, 5)
                         .background(Color.white).opacity(0.9)
@@ -78,9 +79,20 @@ struct ContentView: View {
                    
                 }
                 
-                
+                HStack{
+                    Button("About"){
+                        infoButton.toggle()
+                    }
+                    .fullScreenCover(isPresented: $infoButton, content: {
+                        AboutMe()
+                    })
+                    .padding(10)
+                    Spacer()
+                }
                    
             }
+            
+            
 
             }
         

@@ -28,6 +28,7 @@ struct DailyCuisine: View {
 	@State private var activeSheet : ActiveSheet?
 	@State private var loadingState = LoadingState.loading
 	@State var WikiResult : String
+	@State var WikiURL : URL
 
 	
 	var meal: Meal
@@ -44,7 +45,7 @@ struct DailyCuisine: View {
             
 
 			Divider()
-				.padding(.top, 20)
+				.padding(.top, 5)
 				.padding(.bottom, 5)
                     
 			if loadingState == .loaded{
@@ -53,7 +54,7 @@ struct DailyCuisine: View {
 					.font(.system(size: 14, weight: .light, design: .serif))
 					.foregroundColor(.black)
 					.padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
-					.frame(height: 180)
+					.frame(minWidth: 400, idealWidth: 400, maxWidth: .infinity, minHeight: 140, idealHeight: 170, maxHeight: 170, alignment: .center)
 				
 			}
 			else if loadingState == .loading {
@@ -72,10 +73,20 @@ struct DailyCuisine: View {
 					.padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
 					.frame(height: 150)
 			}
+			HStack(alignment: .firstTextBaseline){
+				Link("Content derived from Wikipedia ", destination: WikiURL)
+//					.padding(.top, -100)
+					.padding(.leading, 10)
+					.font(.footnote)
+					.frame(width: 250, height: 50, alignment: .leading)
+				Spacer()
+				
+			}
 			
 			
-			Spacer()
-				.frame(minHeight: 15, idealHeight: 25, maxHeight: 30)
+			
+//			Spacer()
+//				.frame(minHeight: 5, idealHeight: 10, maxHeight: 10)
 
 			HStack (alignment: .center, spacing: 20){
 				VStack {
@@ -174,7 +185,8 @@ struct DailyCuisine: View {
 			
 			loadingState = .loaded
 			
-		
+			
+			WikiURL = searchResults.items[0].url!
 			
 			let tmp = searchResults.items[0].displayText.components(separatedBy: "\n")[0]
 			
@@ -201,10 +213,10 @@ struct DailyCuisine: View {
 struct DailyCuisine_Previews: PreviewProvider {
     static var previews: some View {
 		Group {
-			DailyCuisine(WikiResult: "", meal: ModelData().meals[0])
+			DailyCuisine(WikiResult: "", WikiURL: URL(string: "")!,meal: ModelData().meals[0])
 				.environmentObject(ModelData())
 				.previewDevice(PreviewDevice(rawValue: "iPhone 12 Pro Max"))
-			DailyCuisine(WikiResult: "", meal: ModelData().meals[0])
+			DailyCuisine(WikiResult: "",  WikiURL: URL(string: "")!,meal: ModelData().meals[0])
 				.previewDevice("iPhone 12 Pro Max")
 				.environmentObject(ModelData())
 				.previewDevice(PreviewDevice(rawValue: "iPhone 12 Pro Max"))

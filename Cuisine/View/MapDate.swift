@@ -26,6 +26,22 @@ struct TextOverlay: View {
            return formatter
        }()
     
+    func convertDate(occasionDate : String)-> Date{
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM d yyyy"
+        
+        let date = Date()
+        
+        var f = formatter.string(from: date)
+//                in date format
+        let todayDate = formatter.date(from: f)
+//        get the year
+        var year = f.components(separatedBy: " ")[2]
+        
+        return (formatter.date(from: occasionDate + " " + year)!)
+        
+    }
+    
     
     var meal: Meal
     
@@ -39,7 +55,7 @@ struct TextOverlay: View {
             endPoint: .center)
     }
     
-    
+    let formatter = DateFormatter()
     
     var body: some View {
         ZStack(alignment: .bottomLeading) {
@@ -49,8 +65,9 @@ struct TextOverlay: View {
                     .font(.title)
                     .bold()
                 Text(meal.country)
+                
 //                formatter.date(from: meal.id
-                Text(meal.id, formatter: Self.taskDateFormat)
+                Text(convertDate(occasionDate: meal.id), formatter: Self.taskDateFormat)
             }
             .padding()
         }
