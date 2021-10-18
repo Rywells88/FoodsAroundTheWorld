@@ -66,7 +66,6 @@ struct TextOverlay: View {
                     .bold()
                 Text(meal.country)
                 
-//                formatter.date(from: meal.id
                 Text(convertDate(occasionDate: meal.id), formatter: Self.taskDateFormat)
             }
             .padding()

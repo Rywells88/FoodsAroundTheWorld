@@ -72,50 +72,7 @@ struct Background: View {
                     .padding(.top, 55)
                 
                
-                
-                
-//                Cloud()
-                
-              
-                
-               
-                
-              
-//                can't fill and trim at the same time
-                    
-                    
-//                    .strokeBorder(Color.black, lineWidth: 20)
-//                    .background(Circle().fill(Color.blue))
-                
-                
-                
-                
-                
-                
-                
-                
-//                Rectangle().fill(Color.gray).border(width: 3,edges: [.leading],color: .black)
-//                    .padding(.leading, 378)
-//                    .padding(.trailing, 0)
-//                    .padding(.top, 213)
-//                    .padding(.bottom, 200)
-//
-//                Rectangle().fill(Color.gray).border(width: 3,edges: [.trailing],color: .black)
-//                    .padding(.leading, 0)
-//                    .padding(.trailing, 378)
-//                    .padding(.top, 213)
-//                    .padding(.bottom, 200)
-                    
-                    
-                    
-                    
-        
-                
-                
-                
-                
           }
-//            .background(Color.gray)
             .ignoresSafeArea()
         
             

@@ -25,9 +25,6 @@ struct AboutMe: View {
                 Spacer()
             }
         
-//        Spacer()
-//            .frame(width: 150, height: 200, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-//
         Text("About & Credits")
             .font(.title)
         Spacer()

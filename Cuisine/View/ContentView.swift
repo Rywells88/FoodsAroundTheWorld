@@ -68,10 +68,9 @@ struct ContentView: View {
                 if departButton {
 
                     DailyCuisine(WikiResult: "",WikiURL: URL(string: "https://github.com/Raureif/WikipediaKit")!, meal: today.getOccasion())
-//                        .transition(.moveAndFade)
                         .padding(.top, 5)
                         .background(Color.white).opacity(0.9)
-                        .padding(.bottom, 50)
+                        .padding(.bottom, 3)
 
         
                 
