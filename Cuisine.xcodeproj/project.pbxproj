@@ -22,6 +22,7 @@
 		D2CAE0DF26CC2CF900B18445 /* WikipediaKit in Frameworks */ = {isa = PBXBuildFile; productRef = D2CAE0DE26CC2CF900B18445 /* WikipediaKit */; };
 		D2E61FA7265EDA1D00778728 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E61FA6265EDA1D00778728 /* ModelData.swift */; };
 		D2F35308271610E4002390C4 /* AboutMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F35307271610E3002390C4 /* AboutMe.swift */; };
+		D2F3530A271F6FF2002390C4 /* DreamCuisineLaunch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F35309271F6FF1002390C4 /* DreamCuisineLaunch.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		D2B116B4266F0CB100B1940E /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		D2E61FA6265EDA1D00778728 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		D2F35307271610E3002390C4 /* AboutMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMe.swift; sourceTree = "<group>"; };
+		D2F35309271F6FF1002390C4 /* DreamCuisineLaunch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DreamCuisineLaunch.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		D247B9EC2656B3A10004604D = {
 			isa = PBXGroup;
 			children = (
+				D2F35309271F6FF1002390C4 /* DreamCuisineLaunch.storyboard */,
 				D247B9F72656B3A10004604D /* Cuisine */,
 				D247B9F62656B3A10004604D /* Products */,
 			);
@@ -196,6 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2F3530A271F6FF2002390C4 /* DreamCuisineLaunch.storyboard in Resources */,
 				D2AC3D4E2658133F004B5076 /* mealData.json in Resources */,
 				D247BA002656B3A40004604D /* Preview Assets.xcassets in Resources */,
 				D247B9FD2656B3A40004604D /* Assets.xcassets in Resources */,

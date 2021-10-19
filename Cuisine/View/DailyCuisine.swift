@@ -93,7 +93,7 @@ struct DailyCuisine: View {
 						meal.mealDetails.Breakfast.image
 							.resizable()
 //							.clipShape(	Circle())
-							.frame(width: 110, height: 110, alignment: .center)
+							.frame(width: 80, height: 80, alignment: .center)
 							.tag("Breakfast")
 							.aspectRatio(1, contentMode: .fit)
 					}
@@ -107,7 +107,7 @@ struct DailyCuisine: View {
 						meal.mealDetails.Lunch.image
 							.resizable()
 //							.clipShape(Circle())
-							.frame(width: 110, height: 110, alignment: .center)
+							.frame(width: 80, height: 80, alignment: .center)
 							.tag("Lunch")
 							.aspectRatio(1,contentMode: .fit)
 					}
@@ -121,7 +121,7 @@ struct DailyCuisine: View {
 						meal.mealDetails.Dinner.image
 							.resizable()
 //							.clipShape(	Circle())
-							.frame(width: 110, height: 110, alignment: .center)
+							.frame(width: 80, height: 80, alignment: .center)
 							.tag("Dinner")
 							.aspectRatio(1,contentMode: .fit)
 					}
