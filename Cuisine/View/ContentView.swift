@@ -23,6 +23,7 @@ struct ContentView: View {
     @State private var departButton = false
     @State private var infoButton = false
     @State private var scalingFactor = false
+    @State private var fade = false
     
     var body: some View {
     let today = TodaysOccasion()
@@ -47,19 +48,24 @@ struct ContentView: View {
                 
                 
             VStack(alignment: .center) {
-                Text("Cuisine's Around the World")
-                    .font(.title)
+                Text("Dream Cuisine")
                     .padding(.top, 5)
                     .foregroundColor(.black).opacity(0.8)
                     .shadow(radius: 1)
+                    .font(.custom("Helvetica", size: 36))
         
 
                 Text("Tap Anywhere to Start")
-                    .font(.subheadline)
+                    .font(.custom("Helvetica", size: 18))
                     .padding(.top, 70)
                     .foregroundColor(.black).opacity(0.8)
                     .shadow(radius: 1)
                     .scaleEffect()
+                    .onAppear(){
+                        withAnimation(Animation.easeOut(duration: 1.2).repeatForever(autoreverses: true)){
+                            fade.toggle()
+                        }
+                    }.opacity(fade ? 0 : 1)
                     
 
                     

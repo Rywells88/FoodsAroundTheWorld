@@ -169,12 +169,11 @@ struct DailyCuisine: View {
 	}
 
 	func fetchNearbyPlaces(searchTerm: String) {
-		let wikipedia = Wikipedia()
+		_ = Wikipedia()
 		WikipediaNetworking.appAuthorEmailForAPI = "ryley.wells88@gmail.com"
 
 		let language = WikipediaLanguage("en")
 
-		var result : [String] = []
 
 		let _ = Wikipedia.shared.requestOptimizedSearchResults(language: language, term: searchTerm) { (searchResults, error) in
 
@@ -190,8 +189,6 @@ struct DailyCuisine: View {
 			let tmp = searchResults.items[0].displayText.components(separatedBy: "\n")[0]
 
 			let result = tmp.components(separatedBy: ".")
-
-			var Sentence = ""
 
 
 			if result.count >= 3{

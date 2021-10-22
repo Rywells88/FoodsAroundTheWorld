@@ -17,11 +17,14 @@ struct MapDate: View {
 //            .overlay(TextOverlay(meal: meal))
         TestMap(coordinates: meal.locationCoordinate)
             .frame(width: 400, height:220, alignment: .center)
-            .overlay(TextOverlay(meal: meal).animation(.easeOut(duration: 1.3)),alignment: .topLeading)
+            .overlay(TextOverlay(meal: meal),alignment: .topLeading)
+        
     }
 }
 
 struct TextOverlay: View {
+    
+    @State private var fade = false
     
     static let taskDateFormat: DateFormatter = {
            let formatter = DateFormatter()
@@ -55,6 +58,7 @@ struct TextOverlay: View {
                 Text(meal.occasion)
                     .font(.title)
                     .bold()
+        
                 Text(meal.country)
                     .italic()
                 

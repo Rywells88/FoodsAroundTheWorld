@@ -18,9 +18,9 @@ class TodaysOccasion{
     func getOccasion()-> Meal{
 //        return the occasion that corresponds to today. if one doesn't exist, find the closest one and return that
         
-        var meals = ModelData().meals
+        let meals = ModelData().meals
         
-        var today = getDate()
+        let today = getDate()
         
         var closest = 100000.0
         
@@ -38,16 +38,16 @@ class TodaysOccasion{
                 
                 let date = Date()
 
-                var f = formatter.string(from: date)
+                let f = formatter.string(from: date)
 //                in date format
                 let todayDate = formatter.date(from: f)
                 
-                var year = f.components(separatedBy: " ")[2]
+                let year = f.components(separatedBy: " ")[2]
              
                 let lhs = formatter.date(from: meal.id + " " + year)
                
                 
-                var tmp = Double(abs((lhs?.timeIntervalSince(todayDate!))!)) * 0.001
+                let tmp = Double(abs((lhs?.timeIntervalSince(todayDate!))!)) * 0.001
                 
                 
                 if (tmp < closest){

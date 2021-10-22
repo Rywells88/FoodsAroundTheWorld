@@ -22,8 +22,8 @@ struct TestMap: UIViewRepresentable {
 
 
         // 1
-        view.mapType = .mutedStandard // (satellite)
-
+        view.mapType = .mutedStandard
+                
         // 2
         let pointOfInterest = CLLocationCoordinate2D(latitude: coordinates.latitude,longitude: coordinates.longitude)
 
