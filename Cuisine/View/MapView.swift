@@ -8,27 +8,47 @@
 import SwiftUI
 import MapKit
 
+struct Place: Identifiable {
+    let id = UUID()
+    let latitude: Double
+    let longitude: Double
+    var coordinate: CLLocationCoordinate2D {
+        CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+    }
+}
+
 struct MapView: View {
     
     var coordinates : CLLocationCoordinate2D
         
     @State private var region = MKCoordinateRegion()
     
+  
+    
+   
+    
     
     
     
     var body: some View {
+       
         Map(coordinateRegion: $region)
-            .onAppear{
-                print(coordinates)
-                setRegion(coordinates)
-            }
+        .onAppear{
+            setRegion(coordinates)
+            
+           
+        }
+
+        
+        
+
     }
+    
     
     private func setRegion(_ coordinate: CLLocationCoordinate2D) {
            region = MKCoordinateRegion(
                center: coordinate,
-               span: MKCoordinateSpan(latitudeDelta: 4.5, longitudeDelta: 4.5)
+               span: MKCoordinateSpan(latitudeDelta: 5.0, longitudeDelta: 5.0)
            )
        }
 }

@@ -23,6 +23,7 @@
 		D2E61FA7265EDA1D00778728 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E61FA6265EDA1D00778728 /* ModelData.swift */; };
 		D2F35308271610E4002390C4 /* AboutMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F35307271610E3002390C4 /* AboutMe.swift */; };
 		D2F3530A271F6FF2002390C4 /* DreamCuisineLaunch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F35309271F6FF1002390C4 /* DreamCuisineLaunch.storyboard */; };
+		D2F3530C2721137F002390C4 /* TestMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F3530B2721137F002390C4 /* TestMap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		D2E61FA6265EDA1D00778728 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		D2F35307271610E3002390C4 /* AboutMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMe.swift; sourceTree = "<group>"; };
 		D2F35309271F6FF1002390C4 /* DreamCuisineLaunch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DreamCuisineLaunch.storyboard; sourceTree = "<group>"; };
+		D2F3530B2721137F002390C4 /* TestMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +105,10 @@
 				D247B9FA2656B3A10004604D /* ContentView.swift */,
 				D2AC3D3C2656B6C9004B5076 /* Background.swift */,
 				D2AC3D3E2656BEBD004B5076 /* DailyCuisine.swift */,
-				D2AC3D402656C1BF004B5076 /* MapView.swift */,
-				D2B116B1266F0C7700B1940E /* MapDate.swift */,
 				D2F35307271610E3002390C4 /* AboutMe.swift */,
+				D2B116B1266F0C7700B1940E /* MapDate.swift */,
+				D2AC3D402656C1BF004B5076 /* MapView.swift */,
+				D2F3530B2721137F002390C4 /* TestMap.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				D247B9FB2656B3A10004604D /* ContentView.swift in Sources */,
 				D2B116B2266F0C7700B1940E /* MapDate.swift in Sources */,
 				D2AC3D412656C1BF004B5076 /* MapView.swift in Sources */,
+				D2F3530C2721137F002390C4 /* TestMap.swift in Sources */,
 				D247B9F92656B3A10004604D /* CuisineApp.swift in Sources */,
 				D2AC3D4B2658129A004B5076 /* meal.swift in Sources */,
 				D2E61FA7265EDA1D00778728 /* ModelData.swift in Sources */,

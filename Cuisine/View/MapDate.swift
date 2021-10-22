@@ -12,9 +12,12 @@ struct MapDate: View {
     var meal : Meal
     
     var body: some View {
-        MapView(coordinates: meal.locationCoordinate)
+//        MapView(coordinates: meal.locationCoordinate)
+//            .frame(width: 400, height:220, alignment: .center)
+//            .overlay(TextOverlay(meal: meal))
+        TestMap(coordinates: meal.locationCoordinate)
             .frame(width: 400, height:220, alignment: .center)
-            .overlay(TextOverlay(meal: meal))
+            .overlay(TextOverlay(meal: meal).animation(.easeOut(duration: 1.3)),alignment: .topLeading)
     }
 }
 
@@ -32,11 +35,11 @@ struct TextOverlay: View {
         
         let date = Date()
         
-        var f = formatter.string(from: date)
+        let f = formatter.string(from: date)
 //                in date format
-        let todayDate = formatter.date(from: f)
+        _ = formatter.date(from: f)
 //        get the year
-        var year = f.components(separatedBy: " ")[2]
+        let year = f.components(separatedBy: " ")[2]
         
         return (formatter.date(from: occasionDate + " " + year)!)
         
@@ -45,32 +48,20 @@ struct TextOverlay: View {
     
     var meal: Meal
     
-    
-    
-    var gradient: LinearGradient {
-        LinearGradient(
-            gradient: Gradient(
-                colors: [Color.black.opacity(0.6), Color.black.opacity(0)]),
-            startPoint: .bottom,
-            endPoint: .center)
-    }
-    
     let formatter = DateFormatter()
     
     var body: some View {
-        ZStack(alignment: .bottomLeading) {
-            Rectangle().fill(gradient)
             VStack(alignment: .leading) {
                 Text(meal.occasion)
                     .font(.title)
                     .bold()
                 Text(meal.country)
+                    .italic()
                 
                 Text(convertDate(occasionDate: meal.id), formatter: Self.taskDateFormat)
             }
-            .padding()
-        }
-        .foregroundColor(.white)
+            .padding(5)
+            .foregroundColor(.white)
     }
 }
 

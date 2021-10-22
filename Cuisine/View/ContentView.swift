@@ -22,6 +22,7 @@ struct ContentView: View {
     
     @State private var departButton = false
     @State private var infoButton = false
+    @State private var scalingFactor = false
     
     var body: some View {
     let today = TodaysOccasion()
@@ -58,9 +59,8 @@ struct ContentView: View {
                     .padding(.top, 70)
                     .foregroundColor(.black).opacity(0.8)
                     .shadow(radius: 1)
-                    .onAppear{
-                        
-                    }
+                    .scaleEffect()
+                    
 
                     
 
