@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MapDate: View {
     
+    @StateObject var mapData = MapViewModel()
+    
     var meal : Meal
     
     var body: some View {
@@ -16,8 +18,9 @@ struct MapDate: View {
 //            .frame(width: 400, height:220, alignment: .center)
 //            .overlay(TextOverlay(meal: meal))
         TestMap(coordinates: meal.locationCoordinate)
-            .frame(width: 400, height:220, alignment: .center)
+            .frame(width: UIScreen.main.bounds.width * 0.92, height:UIScreen.main.bounds.height * 0.25, alignment: .center)
             .overlay(TextOverlay(meal: meal),alignment: .topLeading)
+            .environmentObject(mapData)
         
     }
 }
@@ -58,11 +61,14 @@ struct TextOverlay: View {
                 Text(meal.occasion)
                     .font(.title)
                     .bold()
+                    .minimumScaleFactor(0.01)
         
                 Text(meal.country)
                     .italic()
+                    .minimumScaleFactor(0.01)
                 
                 Text(convertDate(occasionDate: meal.id), formatter: Self.taskDateFormat)
+                    .minimumScaleFactor(0.01)
             }
             .padding(5)
             .foregroundColor(.white)

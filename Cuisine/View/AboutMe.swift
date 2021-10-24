@@ -27,12 +27,18 @@ struct AboutMe: View {
         
         Text("About & Credits")
             .font(.title)
+            
         Spacer()
-            .frame(minWidth: 400, idealWidth: 400, maxWidth: .infinity, minHeight: 250, idealHeight: 200, maxHeight: 200, alignment: .center)
+            
         Text("Created by Ryley Wells in 2021.")
+            .padding(.top, 5)
         Link("Icons by icons8 ", destination: URL(string:"https://icons8.com")!)
+            .padding(.top, 5)
             
         Link("WikipediaKit was created by Frank Rausch (@frankrausch) for Raureif.", destination: URL(string: "https://github.com/Raureif/WikipediaKit")!)
+            .padding(5)
+            .lineLimit(2)
+            .frame(width: 400, height: 150, alignment: .center)
             
         
         }

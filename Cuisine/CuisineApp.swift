@@ -15,5 +15,7 @@ struct CuisineApp: App {
             ContentView()
                 .environmentObject(modelData)
         }
+        
     }
+    
 }

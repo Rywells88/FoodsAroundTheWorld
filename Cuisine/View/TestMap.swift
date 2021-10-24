@@ -12,29 +12,41 @@ struct TestMap: UIViewRepresentable {
     
     @State private var region = MKCoordinateRegion()
     
+    @EnvironmentObject var mapData : MapViewModel
+    
+
     var coordinates : CLLocationCoordinate2D
     
     func makeUIView(context: Context) -> MKMapView {
-        MKMapView(frame: .zero)
+        
+        let view = mapData.mapView
+        
+        view.mapType = .mutedStandard
+        
+        view.showsUserLocation = false
+       
+        
+        return view
+
     }
 
     func updateUIView(_ view: MKMapView, context: Context) {
 
 
-        // 1
         view.mapType = .mutedStandard
-                
-        // 2
+        view.mask?.backgroundColor = .darkGray
+       
+        
         let pointOfInterest = CLLocationCoordinate2D(latitude: coordinates.latitude,longitude: coordinates.longitude)
 
-        // 3
+ 
         let coordinate = CLLocationCoordinate2D(
             latitude: coordinates.latitude, longitude: coordinates.longitude)
         let span = MKCoordinateSpan(latitudeDelta: 5, longitudeDelta: 5)
         let region = MKCoordinateRegion(center: coordinate, span: span)
         view.setRegion(region, animated: true)
 
-        // 4
+  
         let annotation = MKPointAnnotation()
         annotation.coordinate = pointOfInterest
 

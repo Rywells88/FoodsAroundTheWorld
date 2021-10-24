@@ -77,8 +77,9 @@ struct ContentView: View {
                         .padding(.top, 5)
                         .background(Color.white).opacity(0.9)
                         .padding(.bottom, 3)
+                        .frame(width: UIScreen.main.bounds.width * 0.95, alignment: .center)
+                        
 
-        
                 
 
                    

@@ -18,48 +18,44 @@ struct Background: View {
     var blurred: Bool
     
     var body: some View {
-//        if blurred{
             ZStack{
                 
-//                Rectangle().fill(Color.gray)
+
                 
                 
                 Capsule().fill(Color(red: 0.4627, green: 0.8392, blue: 1.0))
-                    .padding(.leading, 50)
-                    .padding(.trailing, 50)
-                    .padding(.top, 120)
-                    .padding(.bottom, 100)
+                    .ignoresSafeArea()
                 
                     
-                Image(systemName: "cloud")
+                Image(systemName: "cloud.fill")
                     .resizable()
                     .frame(width: 120,height: 100)
                     .offset(x: CGFloat(350*Double(var_x1) + 1.0), y: 10)
                     .animation(.easeInOut(duration: 6).repeatForever(autoreverses: false))
                     .onAppear { self.var_x1 *= -1}
                 
-                Image(systemName: "cloud")
+                Image(systemName: "cloud.fill")
                     .resizable()
                     .frame(width: 40,height: 30)
                     .offset(x: CGFloat(350*Double(var_x2) + 1.0), y: 200)
                     .animation(.easeInOut(duration: 10).repeatForever(autoreverses: false))
                     .onAppear { self.var_x2 *= -1}
                 
-                Image(systemName: "cloud")
+                Image(systemName: "cloud.fill")
                     .resizable()
                     .frame(width: 40,height: 30)
                     .offset(x: CGFloat(350*Double(var_x3) + 10.0), y: 150)
                     .animation(.easeInOut(duration: 12).repeatForever(autoreverses: false))
                     .onAppear { self.var_x3 *= -1}
                 
-                Image(systemName: "cloud")
+                Image(systemName: "cloud.fill")
                     .resizable()
                     .frame(width: 120,height: 100)
                     .offset(x: CGFloat(350*Double(var_x4) + 5.0), y: -70)
                     .animation(.easeInOut(duration: 8).repeatForever(autoreverses: false))
                     .onAppear { self.var_x4 *= -1}
                 
-                Image(systemName: "cloud")
+                Image(systemName: "cloud.fill")
                     .resizable()
                     .frame(width: 40,height: 30)
                     .offset(x: CGFloat(350*Double(var_x5) + 10.0), y: -120)
@@ -69,7 +65,7 @@ struct Background: View {
                     .resizable()
                     .ignoresSafeArea()
                     .padding(-90)
-                    .padding(.top, 55)
+                    .padding(.top, 45)
                 
                
           }

@@ -38,22 +38,24 @@ struct DailyCuisine: View {
         VStack {
 
 			MapDate(meal:meal)
-				.padding(.bottom, 10)
-				.padding(.top, 0)
+				.padding(.bottom, 3)
+				.padding(.leading, 10)
+				.padding(.trailing, 10)
 
 
 
 			Divider()
-				.padding(.top, 5)
-				.padding(.bottom, 5)
+				.padding(.top, 3)
+				.padding(.bottom, 3)
 
 			if loadingState == .loaded{
 
 				Text(WikiResult)
 					.font(.system(size: 14, weight: .light, design: .serif))
 					.foregroundColor(.black)
-					.padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
-					.frame(minWidth: 400, idealWidth: 400, maxWidth: .infinity, minHeight: 140, idealHeight: 170, maxHeight: 170, alignment: .center)
+					.padding(EdgeInsets(top: 0, leading: 10, bottom: 5, trailing: 10))
+					.minimumScaleFactor(0.01)
+//					.frame(minWidth: 400, idealWidth: 400, maxWidth: 400, minHeight: 140, idealHeight: 170, maxHeight: 170, alignment: .center)
 
 			}
 			else if loadingState == .loading {
@@ -74,10 +76,11 @@ struct DailyCuisine: View {
 			}
 			HStack(alignment: .firstTextBaseline){
 				Link("Content derived from Wikipedia ", destination: WikiURL)
-					.padding(.top, -20)
+					.padding(.top, -10)
 					.padding(.leading, 10)
 					.font(.footnote)
-					.frame(width: 250, height: 10, alignment: .leading)
+//					.frame(width: 250, height: 10, alignment: .leading)
+					.minimumScaleFactor(0.01)
 				Spacer()
 
 			}
@@ -92,46 +95,51 @@ struct DailyCuisine: View {
 					Button(action: {activeSheet = .breakfast}){
 						meal.mealDetails.Breakfast.image
 							.resizable()
-//							.clipShape(	Circle())
-							.frame(width: 80, height: 80, alignment: .center)
+//							.frame(width: 80, height: 80, alignment: .center)
 							.tag("Breakfast")
 							.aspectRatio(1, contentMode: .fit)
+							.minimumScaleFactor(0.01)
 					}
 					Text("Breakfast")
 						.foregroundColor(.black)
 				}
+			.minimumScaleFactor(0.01)
 			.padding(.trailing, 10)
 			.padding(.leading, 2)
 				VStack {
 					Button(action: {activeSheet = .lunch}){
 						meal.mealDetails.Lunch.image
 							.resizable()
-//							.clipShape(Circle())
-							.frame(width: 80, height: 80, alignment: .center)
+//							.frame(width: 80, height: 80, alignment: .center)
 							.tag("Lunch")
 							.aspectRatio(1,contentMode: .fit)
+							.minimumScaleFactor(0.01)
 					}
 					Text("Lunch")
 						.foregroundColor(.black)
 				}
+			.minimumScaleFactor(0.01)
 			.padding(.trailing, 10)
 			.padding(.leading, 2)
 				VStack {
 					Button(action: {activeSheet = .dinner}){
 						meal.mealDetails.Dinner.image
 							.resizable()
-//							.clipShape(	Circle())
-							.frame(width: 80, height: 80, alignment: .center)
+//							.frame(width: 80, height: 80, alignment: .center)
 							.tag("Dinner")
 							.aspectRatio(1,contentMode: .fit)
+							
 					}
 					Text("Dinner")
 						.foregroundColor(.black)
 				}
 				.padding(.trailing, 10)
 				.padding(.leading, 2)
+				.minimumScaleFactor(0.01)
 
 			}
+			.padding(.leading, 30)
+			.padding(.trailing, 30)
 
 
 
@@ -150,10 +158,12 @@ struct DailyCuisine: View {
 				SafariView(url:URL(string: self.meal.mealDetails.Dinner.recipeURL)!)
 			}
 		}
+		
 
 
 
 	}
+	
 	struct SafariView: UIViewControllerRepresentable {
 
 		let url: URL

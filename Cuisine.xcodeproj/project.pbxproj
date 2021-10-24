@@ -24,6 +24,7 @@
 		D2F35308271610E4002390C4 /* AboutMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F35307271610E3002390C4 /* AboutMe.swift */; };
 		D2F3530A271F6FF2002390C4 /* DreamCuisineLaunch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F35309271F6FF1002390C4 /* DreamCuisineLaunch.storyboard */; };
 		D2F3530C2721137F002390C4 /* TestMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F3530B2721137F002390C4 /* TestMap.swift */; };
+		D2F353122724AFBA002390C4 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F353112724AFBA002390C4 /* MapViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		D2F35307271610E3002390C4 /* AboutMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMe.swift; sourceTree = "<group>"; };
 		D2F35309271F6FF1002390C4 /* DreamCuisineLaunch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DreamCuisineLaunch.storyboard; sourceTree = "<group>"; };
 		D2F3530B2721137F002390C4 /* TestMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMap.swift; sourceTree = "<group>"; };
+		D2F353112724AFBA002390C4 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		D247B9F72656B3A10004604D /* Cuisine */ = {
 			isa = PBXGroup;
 			children = (
+				D2F353102724AF9E002390C4 /* ViewModel */,
 				D2AC3D4C265812E1004B5076 /* Resources */,
 				D2AC3D49265811CD004B5076 /* Model */,
 				D247B9F82656B3A10004604D /* CuisineApp.swift */,
@@ -137,6 +140,14 @@
 				D2B116B4266F0CB100B1940E /* PageViewController.swift */,
 			);
 			path = PageView;
+			sourceTree = "<group>";
+		};
+		D2F353102724AF9E002390C4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D2F353112724AFBA002390C4 /* MapViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +231,7 @@
 				D2AC3D3F2656BEBD004B5076 /* DailyCuisine.swift in Sources */,
 				D233AA2D26B1ED9900B114F1 /* TodaySelector.swift in Sources */,
 				D247B9FB2656B3A10004604D /* ContentView.swift in Sources */,
+				D2F353122724AFBA002390C4 /* MapViewModel.swift in Sources */,
 				D2B116B2266F0C7700B1940E /* MapDate.swift in Sources */,
 				D2AC3D412656C1BF004B5076 /* MapView.swift in Sources */,
 				D2F3530C2721137F002390C4 /* TestMap.swift in Sources */,
@@ -355,6 +367,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Cuisine/Preview Content\"";
 				DEVELOPMENT_TEAM = 4B6DXRYYGK;
@@ -365,9 +378,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Wells.Cuisine;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Wells.DreamCuisine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -378,6 +392,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Cuisine/Preview Content\"";
 				DEVELOPMENT_TEAM = 4B6DXRYYGK;
@@ -388,9 +403,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Wells.Cuisine;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Wells.DreamCuisine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
