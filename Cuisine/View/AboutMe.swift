@@ -34,12 +34,6 @@ struct AboutMe: View {
             .padding(.top, 5)
         Link("Icons by icons8 ", destination: URL(string:"https://icons8.com")!)
             .padding(.top, 5)
-            
-        Link("WikipediaKit was created by Frank Rausch (@frankrausch) for Raureif.", destination: URL(string: "https://github.com/Raureif/WikipediaKit")!)
-            .padding(5)
-            .lineLimit(2)
-            .frame(width: 400, height: 150, alignment: .center)
-            
         
         }
         .padding(.bottom, 200)

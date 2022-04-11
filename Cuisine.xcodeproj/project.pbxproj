@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,7 +19,7 @@
 		D2AC3D4E2658133F004B5076 /* mealData.json in Resources */ = {isa = PBXBuildFile; fileRef = D2AC3D4D2658133F004B5076 /* mealData.json */; };
 		D2B116B2266F0C7700B1940E /* MapDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B116B1266F0C7700B1940E /* MapDate.swift */; };
 		D2B116B5266F0CB100B1940E /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B116B4266F0CB100B1940E /* PageViewController.swift */; };
-		D2CAE0DF26CC2CF900B18445 /* WikipediaKit in Frameworks */ = {isa = PBXBuildFile; productRef = D2CAE0DE26CC2CF900B18445 /* WikipediaKit */; };
+		D2C4DE2927F3D23C004F87BD /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C4DE2827F3D23C004F87BD /* APICaller.swift */; };
 		D2E61FA7265EDA1D00778728 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E61FA6265EDA1D00778728 /* ModelData.swift */; };
 		D2F35308271610E4002390C4 /* AboutMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F35307271610E3002390C4 /* AboutMe.swift */; };
 		D2F3530A271F6FF2002390C4 /* DreamCuisineLaunch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F35309271F6FF1002390C4 /* DreamCuisineLaunch.storyboard */; };
@@ -42,6 +42,7 @@
 		D2AC3D4D2658133F004B5076 /* mealData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mealData.json; sourceTree = "<group>"; };
 		D2B116B1266F0C7700B1940E /* MapDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDate.swift; sourceTree = "<group>"; };
 		D2B116B4266F0CB100B1940E /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		D2C4DE2827F3D23C004F87BD /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		D2E61FA6265EDA1D00778728 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		D2F35307271610E3002390C4 /* AboutMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMe.swift; sourceTree = "<group>"; };
 		D2F35309271F6FF1002390C4 /* DreamCuisineLaunch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DreamCuisineLaunch.storyboard; sourceTree = "<group>"; };
@@ -54,7 +55,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2CAE0DF26CC2CF900B18445 /* WikipediaKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				D2F353112724AFBA002390C4 /* MapViewModel.swift */,
+				D2C4DE2827F3D23C004F87BD /* APICaller.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -167,7 +168,6 @@
 			);
 			name = Cuisine;
 			packageProductDependencies = (
-				D2CAE0DE26CC2CF900B18445 /* WikipediaKit */,
 			);
 			productName = Cuisine;
 			productReference = D247B9F52656B3A10004604D /* Cuisine.app */;
@@ -197,7 +197,6 @@
 			);
 			mainGroup = D247B9EC2656B3A10004604D;
 			packageReferences = (
-				D2CAE0DD26CC2CF900B18445 /* XCRemoteSwiftPackageReference "WikipediaKit" */,
 			);
 			productRefGroup = D247B9F62656B3A10004604D /* Products */;
 			projectDirPath = "";
@@ -230,6 +229,7 @@
 				D2F35308271610E4002390C4 /* AboutMe.swift in Sources */,
 				D2AC3D3F2656BEBD004B5076 /* DailyCuisine.swift in Sources */,
 				D233AA2D26B1ED9900B114F1 /* TodaySelector.swift in Sources */,
+				D2C4DE2927F3D23C004F87BD /* APICaller.swift in Sources */,
 				D247B9FB2656B3A10004604D /* ContentView.swift in Sources */,
 				D2F353122724AFBA002390C4 /* MapViewModel.swift in Sources */,
 				D2B116B2266F0C7700B1940E /* MapDate.swift in Sources */,
@@ -369,6 +369,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Cuisine/Preview Content\"";
 				DEVELOPMENT_TEAM = 4B6DXRYYGK;
 				ENABLE_PREVIEWS = YES;
@@ -394,6 +395,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Cuisine/Preview Content\"";
 				DEVELOPMENT_TEAM = 4B6DXRYYGK;
 				ENABLE_PREVIEWS = YES;
@@ -434,25 +436,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		D2CAE0DD26CC2CF900B18445 /* XCRemoteSwiftPackageReference "WikipediaKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Raureif/WikipediaKit";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.3;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		D2CAE0DE26CC2CF900B18445 /* WikipediaKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D2CAE0DD26CC2CF900B18445 /* XCRemoteSwiftPackageReference "WikipediaKit" */;
-			productName = WikipediaKit;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D247B9ED2656B3A10004604D /* Project object */;
 }

@@ -7,8 +7,6 @@
 
 import SwiftUI
 import SafariServices
-import WikipediaKit
-
 enum ActiveSheet: Identifiable {
 	case breakfast, lunch, dinner
 	
@@ -55,7 +53,7 @@ struct DailyCuisine: View {
 					.foregroundColor(.black)
 					.padding(EdgeInsets(top: 0, leading: 10, bottom: 5, trailing: 10))
 					.minimumScaleFactor(0.01)
-//					.frame(minWidth: 400, idealWidth: 400, maxWidth: 400, minHeight: 140, idealHeight: 170, maxHeight: 170, alignment: .center)
+
 
 			}
 			else if loadingState == .loading {
@@ -125,7 +123,6 @@ struct DailyCuisine: View {
 					Button(action: {activeSheet = .dinner}){
 						meal.mealDetails.Dinner.image
 							.resizable()
-//							.frame(width: 80, height: 80, alignment: .center)
 							.tag("Dinner")
 							.aspectRatio(1,contentMode: .fit)
 							
@@ -144,7 +141,17 @@ struct DailyCuisine: View {
 
 
 		}.onAppear(perform: {
-			fetchNearbyPlaces(searchTerm: meal.country)
+			
+			DispatchQueue.global().async {
+				let caller = APICaller()
+				loadingState = .loading
+				caller.fetchWikiAPI(completion: {(result) in
+					self.WikiResult = result[0]
+					loadingState = .loaded
+					
+				}, searchTerm: meal.country)
+			}
+			
 		})
 			.padding(.bottom, 20)
 		.sheet(item: $activeSheet){item in
@@ -178,40 +185,6 @@ struct DailyCuisine: View {
 
 	}
 
-	func fetchNearbyPlaces(searchTerm: String) {
-		_ = Wikipedia()
-		WikipediaNetworking.appAuthorEmailForAPI = "ryley.wells88@gmail.com"
-
-		let language = WikipediaLanguage("en")
-
-
-		let _ = Wikipedia.shared.requestOptimizedSearchResults(language: language, term: searchTerm) { (searchResults, error) in
-
-			guard error == nil else { return }
-			guard let searchResults = searchResults else { return }
-
-
-			loadingState = .loaded
-
-
-			WikiURL = searchResults.items[0].url!
-
-			let tmp = searchResults.items[0].displayText.components(separatedBy: "\n")[0]
-
-			let result = tmp.components(separatedBy: ".")
-
-
-			if result.count >= 3{
-				WikiResult = result[0] + ". " + result[1] + ". " + result[2] + "."
-			}else if result.count  == 2{
-				WikiResult = result[0] + ". " + result[1] + ". "
-			}else{
-				WikiResult = result[0] + "."
-			}
-
-
-	}
-}
 
 
 
